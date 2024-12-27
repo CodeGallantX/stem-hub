@@ -1,0 +1,22 @@
+[
+    {
+        "title":"STEM Explorer",
+        "tagline": "Interactive simulations for physics, chemistry, and math concepts.",
+        "url": "/dashboard/stem-explorer"
+    },
+    {
+        "title":"BioBuilder",
+        "tagline": "Gamified exploration of human anatomy with interactive learning.",
+        "url": "/dashboard/biobuilder"
+    },
+    {
+        "title":"Build-A-Bridge",
+        "tagline": "Design bridges and test them with real-time physics simulations.",
+        "url": "/dashboard/build-a-bridge"
+    },
+    {
+        "title":"STEM Explorer",
+        "tagline": "Interactive simulations for physics, chemistry, and math concepts.",
+        "url": "/dashboard/stem-explorer"
+    }
+]

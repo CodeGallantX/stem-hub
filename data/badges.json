@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Code Master",
+        "description": "Awarded for completing 100 coding challenges.",
+        "icon": "/icons/code-master.png"
+    },
+    {
+        "name": "Bug Hunter",
+        "description": "Recognized for reporting 10+ bugs.",
+        "icon": "/icons/bug-hunter.png"
+    },
+    {
+        "name": "Helper",
+        "description": "Given for assisting 20+ users.",
+        "icon": "/icons/helper.png"
+    },
+    {
+        "name": "Contributor",
+        "description": "Earned by contributing to an open-source project.",
+        "icon": "/icons/contributor.png"
+    }
+]

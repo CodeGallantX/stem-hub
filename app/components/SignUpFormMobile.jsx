@@ -1,7 +1,8 @@
 "use client";
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { FaAngleLeft } from "react-icons/fa6";
+import { FaAngleLeft } from 'react-icons/fa6';
+import Link from 'next/link';
 
 const App = () => {
   const [formData, setFormData] = useState({
@@ -40,26 +41,26 @@ const App = () => {
     e.preventDefault();
     if (validateForm()) {
       console.log("Form submitted successfully:", formData);
-      router.push('/email-verification')
+      router.push('/login')
     }
   };
 
   return (
-    <div className='lg:grid lg:grid-cols-2 light:bg-gray-200 dark:bg-gray-200 w-full min-h-screen'>
-      <div className="relative flex flex-col px-10 md:px-16 lg:px-10 xl:px-32 pb-10 pt-14">
-        <h1 className='text-3xl font-bold text-left light:text-gray-200 dark:text-white'>
-          Register To Start Your Journey To EduConnect Today
+    <div className='lg:grid lg:grid-cols-2 bg-gray-50 w-full min-h-screen'>
+      <div className="relative flex flex-col px-10 md:px-16 lg:px-10 xl:px-32 pb-10 pt-16">
+        <h1 className='text-3xl font-bold text-left text-black'>
+          Register To Start Your Journey
         </h1>
 
         <a href="/">
-          <FaAngleLeft className="absolute left-8 top-5 p-2 light:bg-gray-500 dark:bg-gray-700 rounded-full text-4xl light:text-gray-500 dark:text-white font-bold" />
+          <FaAngleLeft className="absolute left-9 top-5 p-2 bg-gray-300 rounded-full text-4xl text-gray-500 font-bold" />
         </a>
 
-        <form onSubmit={handleSubmit} className='flex flex-col light:text-gray-200 dark:text-white space-y-4 mt-4'>
+        <form onSubmit={handleSubmit} className='flex flex-col text-black space-y-4 mt-8'>
           <fieldset className="flex flex-col w-full items-start justify-center space-y-1">
             <label htmlFor="name">Name</label>
             <input
-              className="w-full border border-solid p-4 rounded-lg light:bg-gray-200 dark:bg-gray-200 border-gray-500 outline-none light:focus:border-[#e76f51] dark:focus:border-300-gray transition-all duration-300 ease-in-out light:text-gray-200 dark:text-white"
+              className="w-full border border-solid p-4 rounded-lg bg-gray-200 border-gray-300 border-solid outline-none focus:border-gray-500 transition-all duration-300 ease-in-out text-gray-600"
               type="text"
               name="name"
               id="name"
@@ -74,7 +75,7 @@ const App = () => {
           <fieldset className="flex flex-col items-start justify-center space-y-1">
             <label htmlFor="email">Email Address</label>
             <input
-              className="w-full border border-solid p-4 rounded-lg border-gray-500 light:bg-gray-200 dark:bg-gray-200 outline-none light:focus:border-[#e76f51] dark:focus:border-300-gray transition-all duration-300 ease-in-out light:text-gray-200 dark:text-white"
+              className="w-full border border-solid p-4 rounded-lg border-gray-300 bg-gray-200 border-solid outline-none focus:border-gray-500 transition-all duration-300 ease-in-out text-gray-600"
               type="email"
               name="email"
               id="email"
@@ -89,7 +90,7 @@ const App = () => {
           <fieldset className="flex flex-col items-start justify-center space-y-1">
             <label htmlFor="password">Password</label>
             <input
-              className="w-full placeholder:text-2xl font-light border border-solid p-4 rounded-lg light:bg-gray-200 dark:bg-gray-200 border-gray-500 outline-none light:focus:border-[#e76f51] dark:focus:border-300-gray transition-all duration-300 ease-in-out light:text-gray-200 dark:text-white"
+              className="w-full placeholder:text-2xl font-light border border-solid p-4 rounded-lg border-gray-300 bg-gray-200 border-solid outline-none focus:border-gray-500 transition-all duration-300 ease-in-out text-gray-600"
               type="password"
               name="password"
               id="password"
@@ -104,7 +105,7 @@ const App = () => {
           <fieldset className="flex flex-col items-start justify-center space-y-1">
             <label htmlFor="confirmPassword">Confirm Password</label>
             <input
-              className="w-full placeholder:text-2xl font-light border border-solid p-4 rounded-lg light:bg-gray-200 dark:bg-gray-200 border-gray-500 outline-none light:focus:border-[#e76f51] dark:focus:border-300-gray transition-all duration-300 ease-in-out light:text-gray-200 dark:text-white"
+              className="w-full placeholder:text-2xl font-light border border-solid p-4 rounded-lg border-gray-300 bg-gray-200 border-solid outline-none focus:border-gray-500 transition-all duration-300 ease-in-out text-gray-600"
               type="password"
               name="confirmPassword"
               id="confirmPassword"
@@ -124,8 +125,8 @@ const App = () => {
               checked={formData.agree}
               onChange={handleChange}
             />
-            <label htmlFor="agree" className="light:text-gray-200 dark:text-white">
-              I agree to all the <a className="font-bold underline">terms and conditions</a>.
+            <label htmlFor="agree" className="text-gray-800">
+              I agree to all the <Link href="#" className="font-bold underline">terms and conditions</Link>.
             </label>
           </div>
           {errors.agree && <small className="text-red-500">{errors.agree}</small>}

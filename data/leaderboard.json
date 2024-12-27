@@ -1,0 +1,22 @@
+[
+    {
+        "name":"John Samuel",
+        "points": 280,
+        "url": "/dashboard/user/"
+    },
+    {
+        "name":"Kia Smith",
+        "points": 160,
+        "url": "/dashboard/user/"
+    },
+    {
+        "name":"Kemi Davies",
+        "points": 145,
+        "url": "/dashboard/user/"
+    },
+    {
+        "name":"Ron Gilbert",
+        "points": 120,
+        "url": "/dashboard/user/"
+    }
+]

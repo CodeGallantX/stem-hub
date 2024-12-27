@@ -1,0 +1,28 @@
+[
+    {
+      "id": 1,
+      "message": "Your post has been approved!",
+      "type": "success"
+    },
+    {
+      "id": 2,
+      "message": "New comment on your post",
+      "type": "info"
+    },
+    {
+      "id": 3,
+      "message": "Reminder: Your subscription is expiring soon.",
+      "type": "warning"
+    },
+    {
+      "id": 4,
+      "message": "Error: Unable to process your request.",
+      "type": "error"
+    },
+    {
+      "id": 5,
+      "message": "Congratulations! You've reached 100 followers.",
+      "type": "success"
+    }
+  ]
+  

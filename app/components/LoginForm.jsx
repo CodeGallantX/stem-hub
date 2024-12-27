@@ -41,7 +41,7 @@ const LoginForm = () => {
       } else {
         setError("Invalid email or password. Please try again.");
       }
-    }, 2000);
+    }, 2500);
   };
 
   return (
@@ -128,7 +128,7 @@ const LoginForm = () => {
             alt="Classroom"
           />
           <div className="absolute w-full bottom-1/4 translate-y-10 left-1/2 -translate-x-1/2">
-            <div className="flex flex-col space-y-4 items-center text-center px-8">
+            <div className="flex flex-col space-y-4 items-center text-center px-8 text-white">
               <h1 className="text-4xl font-medium">Ask Questions with Ease</h1>
               <p className="text-xl">
                 Post questions in any subject and get clear, reliable answers from students and contributors. Learning starts with a single question.
