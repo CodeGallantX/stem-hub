@@ -1,14 +1,11 @@
-// Sidebar.js
 "use client";
-import { useState } from "react";
-import { FaAngleLeft } from "react-icons/fa";
-import { FaTrophy, FaUserCircle } from "react-icons/fa";
+import { FaAngleLeft, FaTrophy, FaUsers, FaUserCircle, FaSignOutAlt } from "react-icons/fa";
 import Link from "next/link";
 
 const Sidebar = ({ sidebarOpen, handleToggleSidebar }) => {
   return (
     <div
-      className={`bg-[#f28d1c] text-white ${sidebarOpen ? "w-64" : "w-20"} min-h-screen transition-all duration-300`}
+      className={`bg-[#f28d1c] text-white ${sidebarOpen ? "w-64" : "w-20"} min-h-screen h-full transition-all duration-300`}
     >
       <div className="flex items-center justify-between p-4 bg-[#7f4b23]">
         <Link href="/" className="text-2xl font-bold font-outfit text-white">
@@ -39,6 +36,13 @@ const Sidebar = ({ sidebarOpen, handleToggleSidebar }) => {
           {sidebarOpen && <span className="text-lg">Dashboard</span>}
         </Link>
         <Link
+          href="/leaderboard"
+          className={`block py-3 px-4 flex items-center space-x-4 rounded-lg hover:bg-[#d4af37] transition ${sidebarOpen ? "justify-start" : "justify-center"}`}
+        >
+          <FaUsers className="text-2xl" />
+          {sidebarOpen && <span className="text-lg">Leaderboard</span>}
+        </Link>
+        <Link
           href="/profile"
           className={`block py-3 px-4 flex items-center space-x-4 rounded-lg hover:bg-[#d4af37] transition ${sidebarOpen ? "justify-start" : "justify-center"}`}
         >
@@ -49,7 +53,7 @@ const Sidebar = ({ sidebarOpen, handleToggleSidebar }) => {
           href="/"
           className={`block py-3 px-4 flex items-center space-x-4 rounded-lg hover:bg-[#d4af37] transition ${sidebarOpen ? "justify-start" : "justify-center"}`}
         >
-          <FaUserCircle className="text-2xl" />
+          <FaSignOutAlt className="text-2xl" />
           {sidebarOpen && <span className="text-lg">Log Out</span>}
         </Link>
       </div>

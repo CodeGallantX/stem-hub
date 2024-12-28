@@ -3,7 +3,7 @@ const BadgesBox = ({ badges }) => {
         <div className="w-full max-w-4xl mx-auto p-2">
             <h2 className="text-xl font-semibold text-gray-800 mb-4 border-b border-b-[#e76f51] pb-1">Badges</h2>
             {badges.length > 0 ? (
-                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4">
                     {badges.map((badge, index) => (
                         <div
                             key={index}

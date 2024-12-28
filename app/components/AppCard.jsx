@@ -10,11 +10,11 @@ export default function AppCard() {
           key={index}
           className="relative bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition transform hover:scale-105 overflow-hidden"
         >
-          <div className="absolute bottom-4 right-4 opacity-20">
+          <div className="absolute bottom-2 right-2 opacity-20 -z-10">
             <img
               src={app.image}
               alt={`${app.title} icon`}
-              className="w-20 h-20"
+              className="w-32 h-32"
             />
           </div>
 

@@ -6,13 +6,13 @@ export default function Leaderboard() {
   const sectionColors = ['bg-yellow-300', 'bg-gray-300', 'bg-orange-300'];
 
   return (
-    <div className="bg-white rounded-lg p-6 shadow-lg border border-[#e0e0e0] max-w-md mx-auto">
+    <div className="bg-white rounded-lg p-6 shadow-lg border border-[#e0e0e0] w-full  mx-auto">
       <h3 className="text-2xl font-semibold text-[#7f4b23] mb-4">Leaderboard</h3>
       <ul className="space-y-4">
         {sortedBoard.map((contestant, index) => (
           <li
             key={index}
-            className={`flex items-center justify-between py-2 px-4 rounded-lg border-b border-b-gray-100 ${
+            className={`cursor-pointer flex items-center justify-between py-2 px-4 rounded-lg border-b border-b-gray-100 ${
               index < 3 ? sectionColors[index] : 'bg-gray-50'
             }`}
           >

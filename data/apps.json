@@ -3,19 +3,19 @@
         "title": "STEM Explorer",
         "tagline": "Interactive simulations for physics, chemistry, and math concepts.",
         "url": "/dashboard/stem-explorer",
-        "image": "/images/stem-explorer.png"
+        "image": "/wallpaper.png"
     },
     {
         "title": "BioBuilder",
         "tagline": "Gamified exploration of human anatomy with interactive learning.",
         "url": "/dashboard/biobuilder",
-        "image": "/images/biobuilder.png"
+        "image": "/wallpaper.png"
     },
     {
         "title": "Build-A-Bridge",
         "tagline": "Design bridges and test them with real-time physics simulations.",
         "url": "/dashboard/build-a-bridge",
-        "image": "/images/build-a-bridge.png"
+        "image": "/wallpaper.png"
     },
     {
         "title": "CodeLab",
@@ -27,30 +27,30 @@
         "title": "EcoSimulator",
         "tagline": "Learn environmental science through virtual ecosystems and simulations.",
         "url": "/dashboard/ecosimulator",
-        "image": "/images/ecosimulator.png"
+        "image": "/wallpaper.png"
     },
     {
         "title": "RoboCoder",
         "tagline": "Program virtual robots to complete challenges and learn coding logic.",
         "url": "/dashboard/robocoder",
-        "image": "/images/robocoder.png"
+        "image": "/wallpaper.png"
     },
     {
         "title": "Space Navigator",
         "tagline": "Explore the solar system and beyond with immersive 3D simulations.",
         "url": "/dashboard/space-navigator",
-        "image": "/images/space-navigator.png"
+        "image": "/wallpaper.png"
     },
     {
         "title": "MathQuest",
         "tagline": "Solve math puzzles and embark on a fun mathematical adventure.",
         "url": "/dashboard/mathquest",
-        "image": "/images/mathquest.png"
+        "image": "/wallpaper.png"
     },
     {
         "title": "ChemLab",
         "tagline": "Perform virtual chemistry experiments in a safe and interactive environment.",
         "url": "/dashboard/chemlab",
-        "image": "/images/chemlab.png"
+        "image": "/wallpaper.png"
     }
 ]
