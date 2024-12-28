@@ -1,22 +1,42 @@
 [
     {
-        "name": "Code Master",
-        "description": "Awarded for completing 100 coding challenges.",
-        "icon": "/icons/code-master.png"
+        "name": "Pi Prodigy",
+        "description": "For solving 50+ math puzzles.",
+        "icon": "/icons/pi-prodigy.png"
     },
     {
-        "name": "Bug Hunter",
-        "description": "Recognized for reporting 10+ bugs.",
-        "icon": "/icons/bug-hunter.png"
+        "name": "Lab Legend",
+        "description": "For cracking tough science experiments.",
+        "icon": "/icons/lab-legend.png"
     },
     {
-        "name": "Helper",
-        "description": "Given for assisting 20+ users.",
-        "icon": "/icons/helper.png"
+        "name": "Code Conqueror",
+        "description": "For completing 100+ coding challenges.",
+        "icon": "/icons/code-conqueror.png"
     },
     {
-        "name": "Contributor",
-        "description": "Earned by contributing to an open-source project.",
-        "icon": "/icons/contributor.png"
+        "name": "ProtoMaster",
+        "description": "For building unique prototypes.",
+        "icon": "/icons/protomaster.png"
+    },
+    {
+        "name": "Data Whisperer",
+        "description": "For mastering data analysis.",
+        "icon": "/icons/data-whisperer.png"
+    },
+    {
+        "name": "Bot Builder",
+        "description": "For crafting awesome robots.",
+        "icon": "/icons/bot-builder.png"
+    },
+    {
+        "name": "Tech Guru",
+        "description": "For sharing tech wisdom with others.",
+        "icon": "/icons/tech-guru.png"
+    },
+    {
+        "name": "STEM Star",
+        "description": "For inspiring the next gen of innovators.",
+        "icon": "/icons/stem-star.png"
     }
 ]

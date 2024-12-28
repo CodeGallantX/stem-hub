@@ -1,13 +1,13 @@
 const BadgesBox = ({ badges }) => {
     return (
         <div className="w-full max-w-4xl mx-auto p-2">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4 border-b border-b-[#e76f51] pb-2">Badges</h2>
+            <h2 className="text-xl font-semibold text-gray-800 mb-4 border-b border-b-[#e76f51] pb-1">Badges</h2>
             {badges.length > 0 ? (
                 <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {badges.map((badge, index) => (
                         <div
                             key={index}
-                            className="relative group flex items-center justify-center bg-[#4f2a17] rounded-lg p-2 shadow-lg transition-transform transform hover:scale-105"
+                            className="relative group flex items-center justify-center bg-[#D28C69FF] rounded-lg p-2 shadow-lg transition-transform transform hover:scale-105"
                         >
                             {badge.icon && (
                                 <img
