@@ -1,22 +1,66 @@
 [
     {
-        "name":"John Samuel",
-        "points": 280,
-        "url": "/dashboard/user/"
+      "name": "John",
+      "points": 360,
+      "profileImage": "/images/john.jpg",
+      "badges": ["🏆", "🎯"],
+      "level": "Ambitious",
+      "lastActive": "6 minutes ago"
     },
     {
-        "name":"Kia Smith",
-        "points": 160,
-        "url": "/dashboard/user/"
+      "name": "Kimberly",
+      "points": 256,
+      "profileImage": "/images/kim.jpg",
+      "badges": ["🏆", "🎯"],
+      "level": "Rising Star",
+      "lastActive": "14 minutes ago"
     },
     {
-        "name":"Kemi Davies",
-        "points": 145,
-        "url": "/dashboard/user/"
+      "name": "Robert",
+      "points": 225,
+      "profileImage": "/images/alice.jpg",
+      "badges": ["🏆", "🎯"],
+      "level": "Trailblazer",
+      "lastActive": "8 hours ago"
     },
     {
-        "name":"Ron Gilbert",
-        "points": 120,
-        "url": "/dashboard/user/"
+      "name": "Sophia",
+      "points": 220,
+      "profileImage": "/images/alice.jpg",
+      "badges": ["🏆", "🎯"],
+      "level": "Pro",
+      "lastActive": "4 minutes ago"
+    },
+    {
+      "name": "Alicia",
+      "points": 120,
+      "profileImage": "/images/alice.jpg",
+      "badges": ["🏆", "🎯"],
+      "level": "Visionary",
+      "lastActive": "2 hours ago"
+    },
+    {
+      "name": "Bobby",
+      "points": 110,
+      "profileImage": "/images/bob.jpg",
+      "badges": ["🥇", "💡"],
+      "level": "Expert",
+      "lastActive": "5 hours ago"
+    },
+    {
+      "name": "Charlotte",
+      "points": 100,
+      "profileImage": "/images/charlie.jpg",
+      "badges": ["🔥"],
+      "level": "Rising Star",
+      "lastActive": "1 day ago"
+    },
+    {
+      "name": "Diana",
+      "points": 90,
+      "profileImage": "/images/daisy.jpg",
+      "badges": ["⭐"],
+      "level": "Explorer",
+      "lastActive": "3 days ago"
     }
-]
+  ]  
