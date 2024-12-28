@@ -1,10 +1,10 @@
 import Features from '../components/Features';
-import Header from '../components/Header';
+import HeaderComponent from '../components/HeaderComponent';
 
 const App = () => {
   return (
     <div>
-      <Header />
+      <HeaderComponent />
       <Features />
     </div>
   );

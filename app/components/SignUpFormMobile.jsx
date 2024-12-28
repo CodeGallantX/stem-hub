@@ -52,9 +52,10 @@ const App = () => {
           Register To Start Your Journey
         </h1>
 
-        <a href="/">
-          <FaAngleLeft className="absolute left-9 top-5 p-2 bg-gray-300 rounded-full text-4xl text-gray-500 font-bold" />
-        </a>
+          <FaAngleLeft
+          className="absolute left-9 top-5 p-2 bg-gray-300 rounded-full text-4xl text-gray-500 font-bold cursor-pointer"
+          onClick={() => (router.push('/login'))}
+          />
 
         <form onSubmit={handleSubmit} className='flex flex-col text-black space-y-4 mt-8'>
           <fieldset className="flex flex-col w-full items-start justify-center space-y-1">

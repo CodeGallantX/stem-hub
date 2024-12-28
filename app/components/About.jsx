@@ -53,7 +53,7 @@ export default function About() {
           </div> */}
 
           <div className="flex items-start space-x-4">
-            <FaHandshake className="text-3xl text-[#8d4e2d]" />
+            <FaHandshake className="text-8xl text-[#8d4e2d]" />
             <div>
               <h3 className="text-2xl font-bold text-[#8d4e2d] mb-4">Partners & Sponsors</h3>
               <p className="text-lg text-[#6a3d29]">
