@@ -19,7 +19,7 @@ export default function Dashboard() {
     <div className="flex min-h-screen bg-gray-50 relative">
       <div
         className={`fixed z-20 top-0 left-0 h-full bg-white shadow-md transform transition-transform duration-300 ease-in-out ${
-          sidebarOpen ? "w-64" : "w-20"
+          sidebarOpen ? "w-64" : "w-0 md:w-20"
         } md:static`}
       >
         <Sidebar sidebarOpen={sidebarOpen} handleToggleSidebar={handleToggleSidebar} />
@@ -28,7 +28,7 @@ export default function Dashboard() {
       <button
         className={`text-2xl absolute top-5 p-1 bg-[#e76f51] rounded-full text-gray-100 font-bold cursor-pointer z-30 
           transition-transform duration-300 ${
-            sidebarOpen ? "left-[16rem]" : "left-14 md:left-16"
+            sidebarOpen ? "left-[16rem]" : "left-16"
           }`}
         onClick={handleToggleSidebar}
       >
