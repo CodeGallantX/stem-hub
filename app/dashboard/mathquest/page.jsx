@@ -35,9 +35,9 @@ export default function MathQuest() {
           <Link href="#profile" className="hover:text-yellow-400 transition">
             Profile
           </Link>
-          <Link href="/dashboard" className="bg-yellow-400 text-white p-2 rounded-full transition">
-            <FaRotateLeft className="inline-block"/>
-            Dashboard
+          <Link href="/dashboard" className="hover:text-yellow-400 transition">
+            Dashboard 
+            <FaRotateLeft className="inline-block" />
           </Link>
         </nav>
       </header>
@@ -52,6 +52,10 @@ export default function MathQuest() {
           <p className="text-lg text-gray-300 mb-8">
             Solve puzzles, defeat bosses, and explore the magical world of MathQuest.
           </p>
+          <button className="bg-yellow-500 hover:bg-yellow-400 text-black px-6 py-3 rounded-full text-lg font-bold transition">
+            <FaPlay className="inline-block mr-2" />
+            Start Quest
+          </button>
         </div>
       </section>
 
