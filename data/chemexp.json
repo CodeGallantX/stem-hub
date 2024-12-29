@@ -4,7 +4,7 @@
       "title": "Acid-Base Reaction",
       "description": "Mix acids and bases to observe neutralization and understand pH changes.",
       "image": "/images/chemicals.png",
-      "link": "/dashboard/chemlab/acid-base-reaction"
+      "link": "/dashboard/chemlab/titration-simulator"
     },
     {
       "id": 2,

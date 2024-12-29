@@ -8,7 +8,6 @@ export default function MathQuest() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white">
-      {/* Header */}
       <header className="flex justify-between items-center bg-gray-900 px-6 py-4 shadow-lg">
         <h1 className="text-3xl font-extrabold tracking-wider text-yellow-400">MathQuest</h1>
         <nav className="flex space-x-6">
@@ -21,10 +20,12 @@ export default function MathQuest() {
           <Link href="#profile" className="hover:text-yellow-400 transition">
             Profile
           </Link>
+          <Link href="/dashboard" className="hover:text-yellow-400 transition">
+            Dashboard
+          </Link>
         </nav>
       </header>
 
-      {/* Hero Section */}
       <section className="relative text-center py-20 px-6">
         <div className="absolute inset-0 bg-[url('/images/adventure-bg.jpg')] bg-cover bg-center opacity-20"></div>
         <div className="relative z-10">
@@ -41,7 +42,6 @@ export default function MathQuest() {
         </div>
       </section>
 
-      {/* Adventure Map */}
       <section
         id="adventure-map"
         className="py-16 px-6 text-center bg-gradient-to-t from-gray-900 via-gray-800 to-black"
@@ -72,7 +72,6 @@ export default function MathQuest() {
         </div>
       </section>
 
-      {/* Leaderboard */}
       <section
         id="leaderboard"
         className="py-16 px-6 bg-gray-900 text-center text-yellow-400"
