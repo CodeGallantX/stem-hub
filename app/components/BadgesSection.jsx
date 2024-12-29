@@ -1,5 +1,5 @@
 import BadgesBox from "./BadgesBox";
-import badges from '/data/badges.json'
+import badges from '../../data/badges.json'
 
 const BadgesSection = () => {
     return (
