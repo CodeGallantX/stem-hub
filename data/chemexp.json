@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "title": "Acid-Base Reaction",
+      "description": "Mix acids and bases to observe neutralization and understand pH changes.",
+      "image": "/images/chemicals.png",
+      "link": "/dashboard/chemlab/acid-base-reaction"
+    },
+    {
+      "id": 2,
+      "title": "Crystal Formation",
+      "description": "Learn how crystals form through the process of supersaturation.",
+      "image": "/images/crystal.png",
+      "link": "/dashboard/chemlab/crystal-formation"
+    },
+    {
+      "id": 3,
+      "title": "Electrolysis of Water",
+      "description": "Break water into hydrogen and oxygen gas using electric current.",
+      "image": "/images/electrolysis.png",
+      "link": "/dashboard/chemlab/electrolysis"
+    },
+    {
+      "id": 4,
+      "title": "Color Change Reactions",
+      "description": "Observe the visual beauty of oxidation-reduction reactions.",
+      "image": "/images/color-change.png",
+      "link": "/dashboard/chemlab/color-change-reactions"
+    }
+  ]
+  

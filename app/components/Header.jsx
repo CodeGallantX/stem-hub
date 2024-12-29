@@ -52,11 +52,11 @@ const Header = () => {
                         <IoMdClose />
                     </button>
                     <nav className="flex flex-col items-center space-y-8 text-lg">
+                        <Link href="/about" onClick={toggleSidebar} className="hover:text-[#e76f51]">
+                            About
+                        </Link>
                         <Link href="/features" onClick={toggleSidebar} className="hover:text-[#e76f51]">
                             Features
-                        </Link>
-                        <Link href="/about" onClick={toggleSidebar} className="hover:text-[#e76f51]">
-                            About Us
                         </Link>
                         <Link href="/contact" onClick={toggleSidebar} className="hover:text-[#e76f51]">
                             Contact

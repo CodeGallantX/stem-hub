@@ -4,11 +4,11 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function AppCard() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
       {apps.map((app, index) => (
         <div
           key={index}
-          className="relative bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition transform hover:scale-105 overflow-hidden"
+          className="relative bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition transform hover:scale-105 overflow-hidden"
         >
           <div className="absolute bottom-2 right-2 opacity-20 -z-10">
             <img

@@ -43,7 +43,6 @@ const Header = () => {
                     ></div>
                 )}
 
-                {/* Sidebar */}
                 <div
                     className={`fixed inset-0 z-50 bg-[#24201D] text-white flex flex-col items-center justify-center transform ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
                         } transition-transform duration-300 ease-in-out`}

@@ -20,7 +20,7 @@ export default function Dashboard() {
 
       <div className="flex-1 p-6">
         <div className="bg-white p-6 rounded-lg shadow-md flex justify-between items-center">
-          <h1 className="text-3xl font-bold text-gray-700">Welcome</h1>
+          <h1 className="text-3xl font-bold text-gray-700">Howdy, scholar!</h1>
           <div className="flex items-center space-x-4">
             <img
               src="/wallpaper.png"
@@ -34,12 +34,12 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <div className="py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="py-10 grid grid-cols-1 xl:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
             <AppCard />
           </div>
 
-          <div className="lg:col-span-1 hidden md:block">
+          <div className="lg:col-span-1 hidden xl:block">
             <Leaderboard />
           </div>
         </div>
