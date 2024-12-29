@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { FaPlay, FaLock } from "react-icons/fa";
+import { FaRotateLeft } from "react-icons/fa6";
 import Link from "next/link";
 
 export default function MathQuest() {
@@ -34,6 +35,10 @@ export default function MathQuest() {
           <Link href="#profile" className="hover:text-yellow-400 transition">
             Profile
           </Link>
+          <Link href="/dashboard" className="hover:text-yellow-400 transition">
+            <FaRotateLeft />
+            Dashboard
+          </Link>
         </nav>
       </header>
 
@@ -60,9 +65,8 @@ export default function MathQuest() {
           {adventureScenes.map((scene, index) => (
             <div
               key={index}
-              className={`relative bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition duration-300 ${
-                index <= completedScenes ? "scale-100" : "scale-95 opacity-50"
-              }`}
+              className={`relative bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition duration-300 ${index <= completedScenes ? "scale-100" : "scale-95 opacity-50"
+                }`}
             >
               <img
                 src={`/images/${scene.name.toLowerCase().replace(" ", "-")}.jpg`}
@@ -70,9 +74,8 @@ export default function MathQuest() {
                 className="w-full h-40 object-cover"
               />
               <div
-                className={`absolute inset-0 flex items-center justify-center ${
-                  index > completedScenes ? "bg-black bg-opacity-60" : ""
-                }`}
+                className={`absolute inset-0 flex items-center justify-center ${index > completedScenes ? "bg-black bg-opacity-60" : ""
+                  }`}
               >
                 <h4 className="text-xl font-bold text-yellow-400">{scene.name}</h4>
                 {index > completedScenes && (
@@ -80,9 +83,8 @@ export default function MathQuest() {
                 )}
               </div>
               <button
-                className={`absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-black px-4 py-2 rounded-full text-sm font-bold ${
-                  index === completedScenes ? "block" : "hidden"
-                }`}
+                className={`absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-black px-4 py-2 rounded-full text-sm font-bold ${index === completedScenes ? "block" : "hidden"
+                  }`}
                 onClick={handleCompleteScene}
               >
                 Start
