@@ -14,7 +14,7 @@ const merriweather = Merriweather({
 });
 
 export const metadata = {
-  title: "Stem Explorer - A Hub for Interactive STEM Learning",
+  title: "Space Navigator - A Hub for Interactive STEM Learning",
   description: "STEM-Hub is an innovative platform designed to make STEM concepts fun, interactive, and engaging for students through games, apps, and learning tools.",
 };
 
