@@ -75,7 +75,7 @@ export default function MathQuest() {
                 }`}
             >
               <img
-                src={`/images/${scene.name.toLowerCase().replace(" ", "-")}.jpg`}
+                src={`/mathquest/${scene.name.toLowerCase().replace(" ", "-")}.jpg`}
                 alt={scene.name}
                 className="w-full h-40 object-cover"
               />
