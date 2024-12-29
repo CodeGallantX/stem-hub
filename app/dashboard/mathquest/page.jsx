@@ -24,7 +24,6 @@ export default function MathQuest() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-800 via-gray-900 to-black animate-gradient text-white">
-      {/* Header */}
       <header className="z-20 fixed w-full flex justify-between items-center bg-gray-900 px-8 lg:px-14 py-4 shadow-lg">
         <h1 className="text-2xl md:text-3xl font-extrabold tracking-wider text-yellow-400">MathQuest</h1>
         <nav className="hidden lg:flex items-center space-x-6">
@@ -82,7 +81,6 @@ export default function MathQuest() {
         </div>
       </header>
 
-      {/* Hero Section */}
       <section className="relative text-center py-40 px-6">
         <div className="absolute inset-0 bg-[url('/images/adventure-bg.jpg')] bg-cover bg-center opacity-20"></div>
         <div className="relative z-10">
@@ -99,7 +97,6 @@ export default function MathQuest() {
         </div>
       </section>
 
-      {/* Adventure Map */}
       <section
         id="adventure-map"
         className="py-16 px-6 text-center bg-gradient-to-t from-gray-900 via-gray-800 to-black"
@@ -169,7 +166,6 @@ export default function MathQuest() {
         </div>
       </section>
 
-      {/* Profile Section */}
       <section
         id="profile"
         className="py-16 px-6 bg-gradient-to-b from-gray-900 via-gray-800 to-black text-center"
@@ -186,7 +182,6 @@ export default function MathQuest() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-gray-900 py-6 text-center text-gray-500">
         <p className="text-sm">
           © 2024 MathQuest | A gamified way to master mathematics.
