@@ -1,6 +1,6 @@
-"Auto commit script running..."
+ECHO "Auto commit script running..."
 git add .
 git commit -m "updates"
-code .
 cls
+code .
 npm run dev
