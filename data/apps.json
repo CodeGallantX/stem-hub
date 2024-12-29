@@ -1,11 +1,5 @@
 [
     {
-        "title": "STEM Explorer",
-        "tagline": "Interactive simulations for physics, chemistry, and math concepts.",
-        "url": "/dashboard/stem-explorer",
-        "image": "/wallpaper.png"
-    },
-    {
         "title": "BioBuilder",
         "tagline": "Gamified exploration of human anatomy with interactive learning.",
         "url": "/dashboard/biobuilder",

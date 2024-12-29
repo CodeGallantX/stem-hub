@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Hydrochloric Acid (HCl)",
+    "type": "Acid",
+    "image": "/images/hcl.png"
+  },
+  {
+    "id": 2,
+    "name": "Sulfuric Acid (H2SO4)",
+    "type": "Acid",
+    "image": "/images/h2so4.png"
+  },
+  {
+    "id": 3,
+    "name": "Nitric Acid (HNO3)",
+    "type": "Acid",
+    "image": "/images/hno3.png"
+  },
+  {
+    "id": 4,
+    "name": "Sodium Hydroxide (NaOH)",
+    "type": "Base",
+    "image": "/images/naoh.png"
+  },
+  {
+    "id": 5,
+    "name": "Potassium Hydroxide (KOH)",
+    "type": "Base",
+    "image": "/images/koh.png"
+  },
+  {
+    "id": 6,
+    "name": "Ammonium Hydroxide (NH4OH)",
+    "type": "Base",
+    "image": "/images/nh4oh.png"
+  },
+  {
+    "id": 7,
+    "name": "Sodium Carbonate (Na2CO3)",
+    "type": "Salt",
+    "image": "/images/na2co3.png"
+  },
+  {
+    "id": 8,
+    "name": "Potassium Permanganate (KMnO4)",
+    "type": "Oxidizing Agent",
+    "image": "/images/kmno4.png"
+  },
+  {
+    "id": 9,
+    "name": "Copper Sulfate (CuSO4)",
+    "type": "Salt",
+    "image": "/images/cuso4.png"
+  },
+  {
+    "id": 10,
+    "name": "Silver Nitrate (AgNO3)",
+    "type": "Salt",
+    "image": "/images/agno3.png"
+  },
+  {
+    "id": 11,
+    "name": "Barium Chloride (BaCl2)",
+    "type": "Salt",
+    "image": "/images/bacl2.png"
+  },
+  {
+    "id": 12,
+    "name": "Ethanol (C2H5OH)",
+    "type": "Solvent",
+    "image": "/images/ethanol.png"
+  },
+  {
+    "id": 13,
+    "name": "Distilled Water",
+    "type": "Solvent",
+    "image": "/images/distilled_water.png"
+  },
+  {
+    "id": 14,
+    "name": "Phenolphthalein",
+    "type": "Indicator",
+    "image": "/images/phenolphthalein.png"
+  },
+  {
+    "id": 15,
+    "name": "Methyl Orange",
+    "type": "Indicator",
+    "image": "/images/methyl_orange.png"
+  },
+  {
+    "id": 16,
+    "name": "Litmus Solution",
+    "type": "Indicator",
+    "image": "/images/litmus_solution.png"
+  },
+  {
+    "id": 17,
+    "name": "Hydrogen Peroxide (H2O2)",
+    "type": "Oxidizing Agent",
+    "image": "/images/h2o2.png"
+  },
+  {
+    "id": 18,
+    "name": "Acetic Acid (CH3COOH)",
+    "type": "Acid",
+    "image": "/images/acetic_acid.png"
+  },
+  {
+    "id": 19,
+    "name": "Calcium Chloride (CaCl2)",
+    "type": "Salt",
+    "image": "/images/cacl2.png"
+  },
+  {
+    "id": 20,
+    "name": "Zinc Sulfate (ZnSO4)",
+    "type": "Salt",
+    "image": "/images/znso4.png"
+  }
+]

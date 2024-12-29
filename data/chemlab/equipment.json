@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Burette",
+    "type": "Glassware",
+    "image": "/images/burette.png"
+  },
+  {
+    "id": 2,
+    "name": "Pipette",
+    "type": "Glassware",
+    "image": "/images/pipette.png"
+  },
+  {
+    "id": 3,
+    "name": "Conical Flask",
+    "type": "Glassware",
+    "image": "/images/conical_flask.png"
+  },
+  {
+    "id": 4,
+    "name": "Measuring Cylinder",
+    "type": "Glassware",
+    "image": "/images/measuring_cylinder.png"
+  },
+  {
+    "id": 5,
+    "name": "Beaker",
+    "type": "Glassware",
+    "image": "/images/beaker.png"
+  },
+  {
+    "id": 6,
+    "name": "Volumetric Flask",
+    "type": "Glassware",
+    "image": "/images/volumetric_flask.png"
+  },
+  {
+    "id": 7,
+    "name": "Test Tubes",
+    "type": "Glassware",
+    "image": "/images/test_tubes.png"
+  },
+  {
+    "id": 8,
+    "name": "Droppers",
+    "type": "Accessory",
+    "image": "/images/dropper.png"
+  },
+  {
+    "id": 9,
+    "name": "Funnel",
+    "type": "Accessory",
+    "image": "/images/funnel.png"
+  },
+  {
+    "id": 10,
+    "name": "Tripod Stand",
+    "type": "Stand",
+    "image": "/images/tripod_stand.png"
+  },
+  {
+    "id": 11,
+    "name": "Clamp Stand",
+    "type": "Stand",
+    "image": "/images/clamp_stand.png"
+  },
+  {
+    "id": 12,
+    "name": "Wire Gauze",
+    "type": "Accessory",
+    "image": "/images/wire_gauze.png"
+  },
+  {
+    "id": 13,
+    "name": "Bunsen Burner",
+    "type": "Heating Equipment",
+    "image": "/images/bunsen_burner.png"
+  },
+  {
+    "id": 14,
+    "name": "Stirring Rod",
+    "type": "Accessory",
+    "image": "/images/stirring_rod.png"
+  },
+  {
+    "id": 15,
+    "name": "Evaporating Dish",
+    "type": "Glassware",
+    "image": "/images/evaporating_dish.png"
+  },
+  {
+    "id": 16,
+    "name": "Crucible",
+    "type": "Glassware",
+    "image": "/images/crucible.png"
+  },
+  {
+    "id": 17,
+    "name": "Watch Glass",
+    "type": "Glassware",
+    "image": "/images/watch_glass.png"
+  },
+  {
+    "id": 18,
+    "name": "Thermometer",
+    "type": "Measuring Instrument",
+    "image": "/images/thermometer.png"
+  },
+  {
+    "id": 19,
+    "name": "pH Meter",
+    "type": "Measuring Instrument",
+    "image": "/images/ph_meter.png"
+  },
+  {
+    "id": 20,
+    "name": "Weighing Balance",
+    "type": "Measuring Instrument",
+    "image": "/images/weighing_balance.png"
+  }
+]

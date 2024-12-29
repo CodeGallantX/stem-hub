@@ -17,14 +17,14 @@ const Sidebar = ({ sidebarOpen, handleToggleSidebar }) => {
             <span className="text-[#e76f51]">S</span>
           )}
         </Link>
-        <button
+        {/* <button
           className="text-white text-2xl"
           onClick={handleToggleSidebar}
         >
           <FaAngleLeft
             className={`transition-transform duration-300 ${sidebarOpen ? "rotate-0" : "-rotate-180"}`}
           />
-        </button>
+        </button> */}
       </div>
 
       <div className="mt-10 space-y-4">

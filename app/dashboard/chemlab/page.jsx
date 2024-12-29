@@ -1,10 +1,9 @@
 import Link from "next/link";
-import experiments from "../../../data/chemexp.json"; // Adjust the path if needed
+import experiments from "../../../data/chemexp.json";
 
 export default function ChemLab() {
   return (
     <div className="min-h-screen bg-gradient-to-r from-[#2c5364] via-[#203a43] to-[#0f2027] text-white">
-      {/* Header */}
       <header className="bg-[#1f2933] text-white p-6 flex justify-between items-center shadow-lg">
         <h1 className="text-3xl font-bold tracking-wide">ChemLab</h1>
         <div className="flex items-center space-x-4">
@@ -17,7 +16,6 @@ export default function ChemLab() {
         </div>
       </header>
 
-      {/* Main Content */}
       <section className="py-10 px-6">
         <h2 className="text-4xl font-semibold mb-6 text-center">
           Explore Chemistry Experiments
