@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { FaPlay, FaLock } from "react-icons/fa";
-import { FaRotateLeft } from "react-icons/fa6";
+import { MdDashboard } from "react-icons/md";
 import Link from "next/link";
 
 export default function MathQuest() {
@@ -25,7 +25,7 @@ export default function MathQuest() {
       {/* Header */}
       <header className="flex justify-between items-center bg-gray-900 px-6 py-4 shadow-lg">
         <h1 className="text-3xl font-extrabold tracking-wider text-yellow-400">MathQuest</h1>
-        <nav className="flex space-x-6">
+        <nav className="flex items-center space-x-6">
           <Link href="#adventure-map" className="hover:text-yellow-400 transition">
             Adventure Map
           </Link>
@@ -35,9 +35,11 @@ export default function MathQuest() {
           <Link href="#profile" className="hover:text-yellow-400 transition">
             Profile
           </Link>
-          <Link href="/dashboard" className="hover:text-yellow-400 transition">
-            Dashboard 
-            <FaRotateLeft className="inline-block" />
+          <Link
+            href="/dashboard"
+            className="bg-yellow-400 px-4 py-2 rounded-full text-gray-800 flex items-center space-x-2 hover:bg-yellow-500 transition"
+          >
+            <MdDashboard /> <span>Dashboard</span>
           </Link>
         </nav>
       </header>
