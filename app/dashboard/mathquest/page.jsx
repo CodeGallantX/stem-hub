@@ -35,8 +35,8 @@ export default function MathQuest() {
           <Link href="#profile" className="hover:text-yellow-400 transition">
             Profile
           </Link>
-          <Link href="/dashboard" className="hover:text-yellow-400 transition">
-            <FaRotateLeft />
+          <Link href="/dashboard" className="bg-yellow-400 text-white p-2 rounded-full transition">
+            <FaRotateLeft className="inline-block"/>
             Dashboard
           </Link>
         </nav>
