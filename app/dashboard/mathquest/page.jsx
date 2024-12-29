@@ -123,7 +123,7 @@ export default function MathQuest() {
               >
                 <h4 className="text-xl font-bold text-yellow-400 p-2 bg-gray-900 rounded-md">{scene.name}</h4>
                 {index > completedScenes && (
-                  <FaLock className="text-yellow-400 text-[8rem] absolute" />
+                  <FaLock className="text-yellow-400 text-[4rem] absolute" />
                 )}
               </div>
               <button
