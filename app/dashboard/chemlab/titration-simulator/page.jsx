@@ -1,8 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import reagentsData from "../../../../data/chemlab/reagents.json";
-import equipmentData from "../../../../data/chemlab/equipment.json";
+import reagentsData from "/data/chemlab/reagents.json";
+import equipmentData from "/data/chemlab/equipment.json";
 import { FaPlay, FaPause, FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const TitrationSimulator = () => {
@@ -13,10 +13,9 @@ const TitrationSimulator = () => {
   const [musicPlaying, setMusicPlaying] = useState(false);
   const audio =
     typeof Audio !== "undefined"
-      ? new Audio("../../../../audio/background-music.mp3")
+      ? new Audio("/audio/background-music.mp3")
       : null;
 
-  // Start or stop music
   const toggleMusic = () => {
     if (musicPlaying) {
       audio.pause();

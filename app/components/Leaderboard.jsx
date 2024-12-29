@@ -1,4 +1,4 @@
-import board from '../../data/leaderboard.json';
+import board from '/data/leaderboard.json';
 
 export default function Leaderboard() {
   const sortedBoard = [...board].sort((a, b) => b.points - a.points);

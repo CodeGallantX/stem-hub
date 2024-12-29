@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Forest",
+    "description": "A mystical forest filled with riddles.",
+    "img":"/mathquest/forest.jpg"
+  },
+  {
+    "name": "Cave",
+    "description": "A dark cave with math puzzles to solve.",
+    "img":"/mathquest/cave.jpg"
+  },
+  {
+    "name": "Castle",
+    "description": "An ancient castle with logic challenges.",
+    "img":"/mathquest/forest.jpg"
+  },
+  {
+    "name": "Mountain",
+    "description": "A treacherous climb with equations to conquer.",
+    "img":"/mathquest/forest.jpg"
+  },
+  {
+    "name": "Ocean",
+    "description": "A vast ocean with number mysteries.",
+    "img":"/mathquest/forest.jpg"
+  },
+  {
+    "name": "Sky Temple",
+    "description": "A temple in the sky with advanced problems.",
+    "img":"/mathquest/forest.jpg"
+  }
+]

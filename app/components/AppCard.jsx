@@ -1,5 +1,5 @@
 import Link from "next/link";
-import apps from "../../data/apps.json";
+import apps from "/data/apps.json";
 import { FaArrowRight } from "react-icons/fa";
 
 export default function AppCard() {

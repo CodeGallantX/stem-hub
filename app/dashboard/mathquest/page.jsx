@@ -3,18 +3,11 @@ import { useState } from "react";
 import { FaPlay, FaLock } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
 import Link from "next/link";
+import adventureScenes from "../../../../data/mathquest/scenes.json";
 
 export default function MathQuest() {
   const [completedScenes, setCompletedScenes] = useState(0);
 
-  const adventureScenes = [
-    { name: "Forest", description: "A mystical forest filled with riddles." },
-    { name: "Cave", description: "A dark cave with math puzzles to solve." },
-    { name: "Castle", description: "An ancient castle with logic challenges." },
-    { name: "Mountain", description: "A treacherous climb with equations to conquer." },
-    { name: "Ocean", description: "A vast ocean with number mysteries." },
-    { name: "Sky Temple", description: "A temple in the sky with advanced problems." },
-  ];
 
   const handleCompleteScene = () => {
     setCompletedScenes((prev) => Math.min(prev + 1, adventureScenes.length));
@@ -75,7 +68,7 @@ export default function MathQuest() {
                 }`}
             >
               <img
-                src={`/mathquest/${scene.name.toLowerCase().replace(" ", "-")}.jpg`}
+                src={scene.img}
                 alt={scene.name}
                 className="w-full h-40 object-cover"
               />
