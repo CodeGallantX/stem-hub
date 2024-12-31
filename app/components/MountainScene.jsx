@@ -25,7 +25,7 @@ export default function MountainScene({ levels }) {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-800 via-blue-900 to-black text-white flex flex-col items-center justify-center">
+    <div className="min-h-screen bg-gradient-to-tl from-blue-800 via-gray-900 to-purple-900 animate-gradient flex flex-col items-center justify-center">
       {/* Game Over Modal */}
       {gameOver && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center">
@@ -47,8 +47,8 @@ export default function MountainScene({ levels }) {
         <>
           {currentLevel < levels.length ? (
             <>
-              <h1 className="text-4xl font-bold mb-6">Level {currentLevel + 1}</h1>
-              <p className="text-xl text-gray-300 mb-4">
+              <h1 className="text-4xl text-white font-bold mb-6">Level {currentLevel + 1}</h1>
+              <p className="text-2xl text-gray-300 mb-4">
                 {levels[currentLevel].question}
               </p>
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
@@ -56,7 +56,7 @@ export default function MountainScene({ levels }) {
                   <button
                     key={index}
                     onClick={() => handleAnswer(option)}
-                    className="bg-yellow-500 hover:bg-yellow-400 px-4 py-2 rounded-full text-lg font-medium"
+                    className="bg-yellow-500 hover:bg-yellow-400 px-4 py-3 text-gray-900 rounded-full text-xl font-medium"
                   >
                     {option}
                   </button>
@@ -74,6 +74,7 @@ export default function MountainScene({ levels }) {
               <p className="text-xl text-gray-300 mb-4">
                 You have completed all levels!
               </p>
+              <button className="bg-yellow-500 rounded-full p-2 text-gray-900 text-center">Next Arena</button>
             </div>
           )}
         </>
