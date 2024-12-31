@@ -62,7 +62,7 @@ export default function MathQuest() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-800 via-gray-900 to-black animate-gradient text-white">
       <header className="z-20 fixed w-full flex justify-between items-center bg-gray-900 px-8 lg:px-14 py-4 shadow-lg">
-        <Link href="/dashboard/mathquest" className="text-2xl md:text-3xl font-extrabold tracking-wider text-yellow-400">MathQuest</h1>
+        <Link href="/dashboard/mathquest" className="text-2xl md:text-3xl font-extrabold tracking-wider text-yellow-400">MathQuest</Link>
         <nav className="hidden lg:flex items-center space-x-6">
           <Link href="#adventure-map" className="hover:text-yellow-400 transition">
             Adventure Map
