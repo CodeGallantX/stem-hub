@@ -1,0 +1,12 @@
+[
+  { "question": "What is 5 + 3?", "correctAnswer": "8" },
+  { "question": "Solve: 12 / 4", "correctAnswer": "3" },
+  { "question": "What is the square of 6?", "correctAnswer": "36" },
+  { "question": "What is 45 - 19?", "correctAnswer": "26" },
+  { "question": "Solve: 7 × 8", "correctAnswer": "56" },
+  { "question": "What is 100 / 25?", "correctAnswer": "4" },
+  { "question": "What is 20% of 50?", "correctAnswer": "10" },
+  { "question": "What is 11 × 11?", "correctAnswer": "121" },
+  { "question": "Solve: 144 / 12", "correctAnswer": "12" },
+  { "question": "What is the cube of 3?", "correctAnswer": "27" }
+]
