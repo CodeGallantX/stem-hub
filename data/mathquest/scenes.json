@@ -12,17 +12,17 @@
   {
     "name": "Castle",
     "description": "An ancient castle with logic challenges.",
-    "img":"/mathquest/forest.jpg"
+    "img":"/mathquest/castle.jpg"
   },
   {
     "name": "Mountain",
     "description": "A treacherous climb with equations to conquer.",
-    "img":"/mathquest/forest.jpg"
+    "img":"/mathquest/mountain.jpg"
   },
   {
     "name": "Ocean",
     "description": "A vast ocean with number mysteries.",
-    "img":"/mathquest/forest.jpg"
+    "img":"/mathquest/ocean.jpg"
   },
   {
     "name": "Sky Temple",

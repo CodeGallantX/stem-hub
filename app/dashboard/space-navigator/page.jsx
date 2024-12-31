@@ -1,130 +1,110 @@
 import Link from 'next/link';
+import { FaRocket, FaMapMarkerAlt, FaSatellite, FaStar } from 'react-icons/fa';
 
-export default function STEMExplorer() {
+export default function SpaceNavigator() {
   return (
-    <div className="min-h-screen bg-[#fef2d8] text-[#4f3c1d]">
-      <header className="bg-[#f28d1c] text-white p-6 flex justify-between items-center">
-        <h1 className="text-3xl font-bold">STEM Explorer</h1>
-        <div className="flex items-center space-x-4">
-          <Link
-            href="/dashboard"
-            className="bg-[#b87f42] px-4 py-2 rounded-full hover:bg-[#9a6c3d] transition"
-          >
-            Dashboard
-          </Link>
-        </div>
+    <div className="min-h-screen bg-gradient-to-br from-[#0b0033] via-[#1a004d] to-[#330066] text-white flex flex-col items-center">
+      <header className="w-full bg-[#1f005e] p-6 flex justify-between items-center shadow-lg">
+        <h1 className="text-4xl font-bold tracking-wide">Space Navigator</h1>
+        <Link
+          href="/dashboard"
+          className="bg-[#5200a3] px-4 py-2 rounded-full text-lg font-medium hover:bg-[#6b00cc] transition"
+        >
+          Dashboard
+        </Link>
       </header>
 
-      <section className="py-10 px-6">
-        <h2 className="text-3xl font-semibold text-[#7f4b23] mb-6">
-          Explore Interactive Simulations
+      <section className="text-center mt-10">
+        <h2 className="text-3xl font-semibold mb-4">
+          Discover the Universe Like Never Before
         </h2>
-        <p className="text-lg text-[#6a3d29] mb-8">
-          Dive into a variety of STEM simulations to explore core concepts in physics, chemistry,
-          and mathematics.
+        <p className="text-lg text-[#c2b7ff] max-w-3xl mx-auto mb-8">
+          Explore planets, track satellites, and learn about constellations in an interactive, immersive way. Your journey through the cosmos starts here.
         </p>
+        <Link
+          href="#features"
+          className="bg-[#6a00cc] hover:bg-[#8e00ff] px-6 py-3 rounded-full text-xl font-semibold transition transform hover:scale-105 shadow-lg"
+        >
+          Get Started
+        </Link>
+      </section>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Newton's Laws Simulation */}
-          <div className="bg-[#fdf1e1] p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105">
-            <img
-              src="/images/newtons-laws.png"
-              alt="Newton's Laws Simulation"
-              className="w-full h-40 object-cover rounded-lg mb-4"
-            />
-            <h3 className="text-2xl font-semibold text-[#7f4b23] mb-4">Newton's Laws Simulation</h3>
-            <p className="text-lg text-[#6a3d29] mb-6">
-              Understand the laws of motion by experimenting with various objects and forces.
-            </p>
-            <div className="w-full h-2 bg-[#ebdbb2] mb-4">
-              <div className="h-2 bg-[#f28d1c]" style={{ width: '75%' }}></div>
+      <section id="features" className="py-16 px-6 w-full max-w-6xl">
+        <h3 className="text-3xl font-bold mb-10 text-center">Explore Features</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Feature Card 1 */}
+          <div className="bg-[#24005a] p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition group">
+            <div className="flex items-center justify-center mb-4 text-[#9c00ff] group-hover:text-[#cc33ff] text-5xl">
+              <FaRocket />
             </div>
+            <h4 className="text-2xl font-semibold mb-2">Planet Explorer</h4>
+            <p className="text-[#c2b7ff] mb-4">
+              Zoom through planets in our solar system, learn their histories, and experience them in 3D.
+            </p>
             <Link
-              href="/dashboard/stem-explorer/newtons-laws"
-              className="bg-[#b87f42] text-white py-2 px-4 rounded-full hover:bg-[#9a6c3d] transition"
+              href="/space/planets"
+              className="inline-block bg-[#5200a3] text-white py-2 px-4 rounded-full hover:bg-[#6b00cc] transition"
             >
-              Start Simulation
+              Explore Planets
             </Link>
           </div>
 
-          {/* Periodic Table Exploration */}
-          <div className="bg-[#fdf1e1] p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105">
-            <img
-              src="/images/periodic-table.png"
-              alt="Periodic Table Exploration"
-              className="w-full h-40 object-cover rounded-lg mb-4"
-            />
-            <h3 className="text-2xl font-semibold text-[#7f4b23] mb-4">Periodic Table Exploration</h3>
-            <p className="text-lg text-[#6a3d29] mb-6">
-              Explore the periodic table with interactive elements and learn about each element's
-              properties.
-            </p>
-            <div className="w-full h-2 bg-[#ebdbb2] mb-4">
-              <div className="h-2 bg-[#f28d1c]" style={{ width: '65%' }}></div>
+          <div className="bg-[#24005a] p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition group">
+            <div className="flex items-center justify-center mb-4 text-[#ff8c00] group-hover:text-[#ffaa33] text-5xl">
+              <FaMapMarkerAlt />
             </div>
+            <h4 className="text-2xl font-semibold mb-2">Satellite Tracker</h4>
+            <p className="text-[#c2b7ff] mb-4">
+              View live positions of satellites orbiting Earth and track their movements in real-time.
+            </p>
             <Link
-              href="/dashboard/periodic-table"
-              className="bg-[#b87f42] text-white py-2 px-4 rounded-full hover:bg-[#9a6c3d] transition"
+              href="/space/satellites"
+              className="inline-block bg-[#5200a3] text-white py-2 px-4 rounded-full hover:bg-[#6b00cc] transition"
             >
-              Explore Table
+              Track Satellites
             </Link>
           </div>
 
-          {/* Geometry Visualizer */}
-          <div className="bg-[#fdf1e1] p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105">
-            <img
-              src="/images/geometry-visualizer.png"
-              alt="Geometry Visualizer"
-              className="w-full h-40 object-cover rounded-lg mb-4"
-            />
-            <h3 className="text-2xl font-semibold text-[#7f4b23] mb-4">Geometry Visualizer</h3>
-            <p className="text-lg text-[#6a3d29] mb-6">
-              Visualize geometric shapes and understand the core principles of geometry.
-            </p>
-            <div className="w-full h-2 bg-[#ebdbb2] mb-4">
-              <div className="h-2 bg-[#f28d1c]" style={{ width: '80%' }}></div>
+          {/* Feature Card 3 */}
+          <div className="bg-[#24005a] p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition group">
+            <div className="flex items-center justify-center mb-4 text-[#00ccff] group-hover:text-[#33ddff] text-5xl">
+              <FaSatellite />
             </div>
+            <h4 className="text-2xl font-semibold mb-2">Star Finder</h4>
+            <p className="text-[#c2b7ff] mb-4">
+              Identify constellations and stars in your area with detailed visualizations and data.
+            </p>
             <Link
-              href="/dashboard/geometry-visualizer"
-              className="bg-[#b87f42] text-white py-2 px-4 rounded-full hover:bg-[#9a6c3d] transition"
+              href="/space/stars"
+              className="inline-block bg-[#5200a3] text-white py-2 px-4 rounded-full hover:bg-[#6b00cc] transition"
             >
-              Start Visualization
+              Find Stars
             </Link>
           </div>
 
-          {/* Additional Simulations */}
-          <div className="bg-[#fdf1e1] p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:scale-105">
-            <img
-              src="/images/circuit-builder.png"
-              alt="Circuit Builder"
-              className="w-full h-40 object-cover rounded-lg mb-4"
-            />
-            <h3 className="text-2xl font-semibold text-[#7f4b23] mb-4">Circuit Builder</h3>
-            <p className="text-lg text-[#6a3d29] mb-6">
-              Design and test circuits to learn about electricity and electronics.
-            </p>
-            <div className="w-full h-2 bg-[#ebdbb2] mb-4">
-              <div className="h-2 bg-[#f28d1c]" style={{ width: '90%' }}></div>
+          {/* Feature Card 4 */}
+          <div className="bg-[#24005a] p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition group">
+            <div className="flex items-center justify-center mb-4 text-[#ffaa33] group-hover:text-[#ffcc66] text-5xl">
+              <FaStar />
             </div>
+            <h4 className="text-2xl font-semibold mb-2">Cosmic Challenges</h4>
+            <p className="text-[#c2b7ff] mb-4">
+              Take fun quizzes and challenges to test your space knowledge and earn cosmic badges.
+            </p>
             <Link
-              href="/dashboard/circuit-builder"
-              className="bg-[#b87f42] text-white py-2 px-4 rounded-full hover:bg-[#9a6c3d] transition"
+              href="/space/challenges"
+              className="inline-block bg-[#5200a3] text-white py-2 px-4 rounded-full hover:bg-[#6b00cc] transition"
             >
-              Build Circuit
+              Start Challenges
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#fdf1e1] py-10 px-6 mt-10 rounded-lg shadow-lg">
-        <h2 className="text-2xl font-semibold text-[#7f4b23] mb-6">Progress & Achievements</h2>
-        <div className="mb-6">
-          <h3 className="text-xl font-medium">Simulation Progress</h3>
-          <div className="w-full h-2 bg-[#ebdbb2] mb-4">
-            <div className="h-2 bg-[#f28d1c]" style={{ width: '60%' }}></div>
-          </div>
-        </div>
-      </section>
+      {/* Footer */}
+      <footer className="bg-[#1f005e] w-full py-6 text-center text-[#c2b7ff] text-sm">
+        <p>© {new Date().getFullYear()} Space Navigator. All Rights Reserved.</p>
+      </footer>
     </div>
   );
 }

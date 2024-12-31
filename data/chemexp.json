@@ -8,10 +8,10 @@
     },
     {
       "id": 2,
-      "title": "Crystal Formation",
-      "description": "Learn how crystals form through the process of supersaturation.",
-      "image": "/images/crystal.png",
-      "link": "/dashboard/chemlab/crystal-formation"
+      "title": "Periodicity",
+      "description": "Learn about the periodic table.",
+      "image": "/images/periodicity.png",
+      "link": "/dashboard/chemlab/periodicity"
     },
     {
       "id": 3,
@@ -19,13 +19,5 @@
       "description": "Break water into hydrogen and oxygen gas using electric current.",
       "image": "/images/electrolysis.png",
       "link": "/dashboard/chemlab/electrolysis"
-    },
-    {
-      "id": 4,
-      "title": "Color Change Reactions",
-      "description": "Observe the visual beauty of oxidation-reduction reactions.",
-      "image": "/images/color-change.png",
-      "link": "/dashboard/chemlab/color-change-reactions"
     }
   ]
-  
