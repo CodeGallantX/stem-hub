@@ -2,16 +2,71 @@ import Link from 'next/link';
 import { FaRocket, FaMapMarkerAlt, FaSatellite, FaStar } from 'react-icons/fa';
 
 export default function SpaceNavigator() {
+  
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+  
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0b0033] via-[#1a004d] to-[#330066] text-white flex flex-col items-center">
-      <header className="w-full bg-[#1f005e] p-6 flex justify-between items-center shadow-lg">
-        <h1 className="text-4xl font-bold tracking-wide">Space Navigator</h1>
-        <Link
-          href="/dashboard"
-          className="bg-[#5200a3] px-4 py-2 rounded-full text-lg font-medium hover:bg-[#6b00cc] transition"
+      <header className="z-20 fixed w-full flex justify-between items-center bg-gray-900 px-8 lg:px-14 py-4 shadow-lg">
+        <Link href="/dashboard/space-navigator" className="text-2xl md:text-3xl font-extrabold tracking-wider text-yellow-400">Space Navigator</Link>
+        <nav className="hidden lg:flex items-center space-x-6">
+          <Link href="#adventure-map" className="hover:text-yellow-400 transition">
+            Adventure Map
+          </Link>
+          <Link href="#leaderboard" className="hover:text-yellow-400 transition">
+            Leaderboard
+          </Link>
+          <Link href="#profile" className="hover:text-yellow-400 transition">
+            Profile
+          </Link>
+          <Link
+            href="/dashboard"
+            className="bg-[#5200a3] hover:bg-[#6b00cc] px-4 py-2 rounded-full text-gray-800 flex items-center space-x-2 transition"
+          >
+            <MdDashboard /> <span>Dashboard</span>
+          </Link>
+        </nav>
+        <button onClick={toggleSidebar} className="lg:hidden text-3xl text-white">
+          <HiMenuAlt4 />
+        </button>
+        {isSidebarOpen && (
+          <div
+            className="lg:hidden fixed inset-0 z-40 bg-black bg-opacity-50 backdrop-blur-md"
+            onClick={toggleSidebar}
+          ></div>
+        )}
+
+        <div
+          className={`lg:hidden fixed inset-0 z-50 bg-gray-900 bg-opacity-50 text-white flex flex-col items-center justify-center transform ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
+            } transition-transform duration-300 ease-in-out`}
         >
-          Dashboard
-        </Link>
+          <button onClick={toggleSidebar} className="absolute top-6 right-6 text-white text-3xl">
+            <IoMdClose />
+          </button>
+          <nav className="flex flex-col items-center space-y-8 text-lg">
+            <Link href="#adventure-map" onClick={toggleSidebar} className="hover:text-yellow-400 transition">
+              Adventure Map
+            </Link>
+            <Link href="#leaderboard" onClick={toggleSidebar} className="hover:text-yellow-400 transition">
+              Leaderboard
+            </Link>
+            <Link href="#profile" onClick={toggleSidebar} className="hover:text-yellow-400 transition">
+              Profile
+            </Link>
+            <Link
+              href="/dashboard"
+              onClick={toggleSidebar}
+              className="bg-yellow-400 px-4 py-2 rounded-full text-gray-800 flex items-center space-x-2 hover:bg-yellow-500 transition"
+            >
+              <MdDashboard /> <span>Dashboard</span>
+            </Link>
+          </nav>
+        </div>
       </header>
 
       <section className="text-center mt-10">
