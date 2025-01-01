@@ -62,7 +62,7 @@ export default function MathQuest() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-800 via-gray-900 to-black animate-gradient text-white">
       <header className="z-20 fixed w-full flex justify-between items-center bg-gray-900 px-8 lg:px-14 py-4 shadow-lg">
-        <Link href="/dashboard/mathquest" className="text-2xl md:text-3xl font-extrabold tracking-wider text-yellow-400">MathQuest</Link>
+        <Link href="/dashboard/mathquest" className="text-2xl md:text-3xl font-bold tracking-wider text-yellow-400"><span className="text-white">Math</span>Quest</Link>
         <nav className="hidden lg:flex items-center space-x-6">
           <Link href="#adventure-map" className="hover:text-yellow-400 transition">
             Adventure Map
@@ -121,7 +121,7 @@ export default function MathQuest() {
       {currentScene ? (
         <>
           <MountainScene levels={sceneLevels} />
-          <section className="py-24 px-6 text-center bg-gradient-to-t from-gray-900 via-gray-800 to-black">
+          <section id="sceneCompleted" className="py-24 px-6 min-h-screen text-center bg-gradient-to-t from-gray-900 via-gray-800 to-black">
             <h3 className="text-3xl font-bold text-yellow-400 mb-8">{currentScene.name}</h3>
             <p className="text-gray-300 mb-6">{currentScene.description}</p>
             <img src={currentScene.img} alt={currentScene.name} className="w-full max-w-md mx-auto rounded-lg mb-6" />
@@ -135,7 +135,7 @@ export default function MathQuest() {
         </>
       ) : (
         <>
-          <section className="relative text-center py-40 px-6">
+          <section className="relative text-center py-32 pt-44 px-6">
             <div className="absolute inset-0 bg-[url('/images/adventure-bg.jpg')] bg-cover bg-center opacity-20"></div>
             <div className="relative z-10">
               <h2 className="text-4xl md:text-5xl font-extrabold tracking-wide text-yellow-400 mb-4">

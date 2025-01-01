@@ -1,11 +1,12 @@
 "use client";
 import { useState } from "react";
+import { useRouter } from 'next/navigation'
 
 export default function MountainScene({ levels }) {
   const [currentLevel, setCurrentLevel] = useState(0);
   const [isCorrect, setIsCorrect] = useState(null);
   const [gameOver, setGameOver] = useState(false);
-
+  const router = useRouter();
   const handleAnswer = (selectedOption) => {
     if (selectedOption === levels[currentLevel].correctAnswer) {
       setIsCorrect(true);
@@ -14,7 +15,7 @@ export default function MountainScene({ levels }) {
         setIsCorrect(null);
       }, 1000);
     } else {
-      setGameOver(true); // Show the Game Over popup
+      setGameOver(true);
     }
   };
 
@@ -26,7 +27,6 @@ export default function MountainScene({ levels }) {
 
   return (
     <div className="min-h-screen bg-gradient-to-tl from-blue-800 via-gray-900 to-purple-900 animate-gradient flex flex-col items-center justify-center">
-      {/* Game Over Modal */}
       {gameOver && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center">
           <div className="bg-white text-black p-8 rounded-lg text-center">
@@ -42,16 +42,21 @@ export default function MountainScene({ levels }) {
         </div>
       )}
 
-      {/* Game Interface */}
       {!gameOver && (
         <>
           {currentLevel < levels.length ? (
             <>
+              <button
+                className="absolute top-6 left-4 bg-yellow-500 px-4 py-2 rounded-full float-left text-gray-900 "
+                onClick={() => (router.push('/dashboard/mathquest'))}
+              >
+                Back to Home
+              </button>
               <h1 className="text-4xl text-white font-bold mb-6">Level {currentLevel + 1}</h1>
               <p className="text-2xl text-gray-300 mb-4">
                 {levels[currentLevel].question}
               </p>
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
+              <div className="grid gap-4 grid-cols-2 md:grid-cols-4">
                 {levels[currentLevel].options.map((option, index) => (
                   <button
                     key={index}
@@ -74,7 +79,7 @@ export default function MountainScene({ levels }) {
               <p className="text-xl text-gray-300 mb-4">
                 You have completed all levels!
               </p>
-              <button className="bg-yellow-500 rounded-full p-2 text-gray-900 text-center">Next Arena</button>
+              <a href="#sceneCompleted" className="bg-yellow-500 rounded-full px-4 py-3 text-gray-900 text-center">Next Arena</a>
             </div>
           )}
         </>

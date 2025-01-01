@@ -87,7 +87,6 @@ export default function SpaceNavigator() {
       <section id="features" className="py-16 px-6 w-full max-w-6xl">
         <h3 className="text-3xl font-bold mb-10 text-center">Explore Features</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Feature Card 1 */}
           <div className="bg-[#24005a] p-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition group">
             <div className="flex items-center justify-center mb-4 text-[#9c00ff] group-hover:text-[#cc33ff] text-5xl">
               <FaRocket />

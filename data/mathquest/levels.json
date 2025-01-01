@@ -26,6 +26,56 @@
         "question": "What is the square root of 64?",
         "options": [7, 8, 9, 6],
         "correctAnswer": 8
+      },
+      {
+        "question": "If you buy 3 apples for $2 each, how much do you pay?",
+        "options": [6, 8, 9, 10],
+        "correctAnswer": 6
+      },
+      {
+        "question": "What is the next number in the sequence: 2, 4, 6, ...?",
+        "options": [7, 8, 9, 10],
+        "correctAnswer": 8
+      },
+      {
+        "question": "What is 15% of 100?",
+        "options": [15, 20, 25, 30],
+        "correctAnswer": 15
+      },
+      {
+        "question": "How many sides does a hexagon have?",
+        "options": [5, 6, 7, 8],
+        "correctAnswer": 6
+      },
+      {
+        "question": "What is 10 more than 45?",
+        "options": [55, 50, 60, 65],
+        "correctAnswer": 55
+      },
+      {
+        "question": "What is 45 minutes expressed as a fraction of an hour?",
+        "options": ["1/4", "3/4", "1/2", "2/3"],
+        "correctAnswer": "3/4"
+      },
+      {
+        "question": "A farmer has 3 cows and 5 chickens. How many legs are there in total?",
+        "options": [20, 22, 24, 18],
+        "correctAnswer": 22
+      },
+      {
+        "question": "What is the sum of the angles in a triangle?",
+        "options": [180, 360, 90, 270],
+        "correctAnswer": 180
+      },
+      {
+        "question": "What is the perimeter of a rectangle with length 8 and width 5?",
+        "options": [13, 26, 40, 20],
+        "correctAnswer": 26
+      },
+      {
+        "question": "If 3x = 12, what is x?",
+        "options": [3, 4, 5, 6],
+        "correctAnswer": 4
       }
     ]
   },
@@ -56,6 +106,56 @@
         "question": "What is 81 / 9?",
         "options": [7, 8, 9, 10],
         "correctAnswer": 9
+      },
+      {
+        "question": "A train travels 60 miles in 2 hours. What is its speed?",
+        "options": [30, 40, 50, 60],
+        "correctAnswer": 30
+      },
+      {
+        "question": "What is the greatest common factor of 18 and 24?",
+        "options": [2, 3, 6, 12],
+        "correctAnswer": 6
+      },
+      {
+        "question": "Solve: If y - 4 = 10, what is y?",
+        "options": [12, 14, 16, 18],
+        "correctAnswer": 14
+      },
+      {
+        "question": "What is the smallest prime number?",
+        "options": [1, 2, 3, 5],
+        "correctAnswer": 2
+      },
+      {
+        "question": "What is 3/4 expressed as a decimal?",
+        "options": [0.5, 0.25, 0.75, 1],
+        "correctAnswer": 0.75
+      },
+      {
+        "question": "How many faces does a cube have?",
+        "options": [6, 8, 12, 4],
+        "correctAnswer": 6
+      },
+      {
+        "question": "If a clock shows 3:15, what is the angle between the hour and minute hands?",
+        "options": [90, 120, 45, 97.5],
+        "correctAnswer": 97.5
+      },
+      {
+        "question": "What is the probability of rolling a 5 on a standard die?",
+        "options": ["1/6", "1/2", "1/3", "1/4"],
+        "correctAnswer": "1/6"
+      },
+      {
+        "question": "Find the area of a triangle with base 5 and height 8.",
+        "options": [20, 40, 25, 50],
+        "correctAnswer": 20
+      },
+      {
+        "question": "What is the volume of a cube with side length 3?",
+        "options": [9, 27, 36, 18],
+        "correctAnswer": 27
       }
     ]
   },
@@ -86,6 +186,61 @@
         "question": "What is the value of π to two decimal places?",
         "options": [3.14, 3.16, 3.13, 3.15],
         "correctAnswer": 3.14
+      },
+      {
+        "question": "A rectangle has a length of 10 and a width of 6. What is its area?",
+        "options": [16, 60, 36, 66],
+        "correctAnswer": 60
+      },
+      {
+        "question": "What is the probability of flipping a coin and getting heads?",
+        "options": ["1/2", "1/4", "2/3", "1"],
+        "correctAnswer": "1/2"
+      },
+      {
+        "question": "Simplify: 5x + 3x - 2.",
+        "options": ["8x", "8x - 2", "7x - 2", "10x"],
+        "correctAnswer": "8x - 2"
+      },
+      {
+        "question": "What is the volume of a sphere with radius 3? (Use π = 3.14)",
+        "options": [113.04, 114, 121.5, 36],
+        "correctAnswer": 113.04
+      },
+      {
+        "question": "What is the slope of the line y = 2x + 3?",
+        "options": [2, 3, 5, -2],
+        "correctAnswer": 2
+      },
+      {
+        "question": "If a triangle has angles 50° and 60°, what is the third angle?",
+        "options": [70, 80, 90, 60],
+        "correctAnswer": 70
+      },
+      {
+        "question": "What is the smallest positive integer divisible by both 6 and 8?",
+        "options": [24, 48, 36, 12],
+        "correctAnswer": 24
+      },
+      {
+        "question": "What is 1/4 of 100?",
+        "options": [25, 20, 50, 75],
+        "correctAnswer": 25
+      },
+      {
+        "question": "If x/2 = 7, what is x?",
+        "options": [7, 14, 3.5, 10],
+        "correctAnswer": 14
+      },
+      {
+        "question": "What is the quadratic formula?",
+        "options": [
+          "-b ± √(b² - 4ac)/2a",
+          "b ± √(b² + 4ac)/2a",
+          "b ± √(4ac - b²)/2a",
+          "-b ± √(b² - 4ac)/a"
+        ],
+        "correctAnswer": "-b ± √(b² - 4ac)/2a"
       }
     ]
   },
@@ -116,6 +271,226 @@
         "question": "What is the square root of 81?",
         "options": [9, 8, 7, 6],
         "correctAnswer": 9
+      },
+      {
+        "question": "A hiker walks 4 km uphill, 6 km downhill, and 2 km flat. How many km does the hiker walk in total?",
+        "options": [10, 12, 14, 8],
+        "correctAnswer": 12
+      },
+      {
+        "question": "What is 15% of 60?",
+        "options": [9, 10, 12, 8],
+        "correctAnswer": 9
+      },
+      {
+        "question": "If a rectangle's area is 48 and its width is 6, what is its length?",
+        "options": [8, 7, 6, 9],
+        "correctAnswer": 8
+      },
+      {
+        "question": "What is the sum of the first five prime numbers?",
+        "options": [28, 26, 30, 32],
+        "correctAnswer": 28
+      },
+      {
+        "question": "If a triangle's base is 10 and its height is 5, what is its area?",
+        "options": [50, 25, 30, 20],
+        "correctAnswer": 25
+      },
+      {
+        "question": "Convert 0.75 to a fraction.",
+        "options": ["3/4", "1/2", "2/3", "1/4"],
+        "correctAnswer": "3/4"
+      },
+      {
+        "question": "What is the cube root of 27?",
+        "options": [3, 2, 9, 1],
+        "correctAnswer": 3
+      },
+      {
+        "question": "What is the mode of the numbers 3, 4, 4, 5, 6, 6, 6, 7?",
+        "options": [4, 5, 6, 7],
+        "correctAnswer": 6
+      },
+      {
+        "question": "Solve for x: 2x + 3 = 15.",
+        "options": [6, 7, 8, 5],
+        "correctAnswer": 6
+      },
+      {
+        "question": "What is the circumference of a circle with a diameter of 10? (Use π = 3.14)",
+        "options": [31.4, 15.7, 20, 28],
+        "correctAnswer": 31.4
+      }
+    ]
+  },
+  {
+    "scene": "Ocean",
+    "questions": [
+      {
+        "question": "Solve for x: 3x - 5 = 16.",
+        "options": [7, 5, 9, 11],
+        "correctAnswer": 7
+      },
+      {
+        "question": "If sin(θ) = 0.5, what is θ in degrees?",
+        "options": [30, 45, 60, 90],
+        "correctAnswer": 30
+      },
+      {
+        "question": "The derivative of sin(x) is:",
+        "options": ["cos(x)", "-sin(x)", "tan(x)", "-cos(x)"],
+        "correctAnswer": "cos(x)"
+      },
+      {
+        "question": "What is the solution to the quadratic equation x^2 + 5x + 6 = 0?",
+        "options": ["-2 and -3", "-1 and -6", "2 and -3", "-2 and 3"],
+        "correctAnswer": "-2 and -3"
+      },
+      {
+        "question": "What is the sum of the first 10 terms of the arithmetic sequence 3, 7, 11, 15...?",
+        "options": [220, 210, 200, 190],
+        "correctAnswer": 220
+      },
+      {
+        "question": "Evaluate the definite integral ∫(0 to 1) of x^2 dx.",
+        "options": ["1/3", "1/2", "1/4", "2/3"],
+        "correctAnswer": "1/3"
+      },
+      {
+        "question": "A submarine is descending at a rate of 3 meters per second. After 45 seconds, how far below the surface is it?",
+        "options": [135, 140, 150, 120],
+        "correctAnswer": 135
+      },
+      {
+        "question": "If the complex number z = 3 + 4i, what is |z|?",
+        "options": [5, 7, 4, 9],
+        "correctAnswer": 5
+      },
+      {
+        "question": "What is the determinant of the matrix [[1, 2], [3, 4]]?",
+        "options": [-2, -3, -4, -5],
+        "correctAnswer": -2
+      },
+      {
+        "question": "Find the area of a triangle with vertices (0,0), (4,0), and (0,3).",
+        "options": [6, 7, 8, 12],
+        "correctAnswer": 6
+      },
+      {
+        "question": "A boat travels 20 km upstream in 2 hours and the same distance downstream in 1 hour. What is the speed of the current?",
+        "options": [5, 4, 3, 2],
+        "correctAnswer": 5
+      },
+      {
+        "question": "Simplify: ln(e^3).",
+        "options": [3, 1, 2, 4],
+        "correctAnswer": 3
+      },
+      {
+        "question": "What is the volume of a cone with a base radius of 3 and a height of 9? (Use π = 3.14)",
+        "options": [84.78, 84.6, 85, 83],
+        "correctAnswer": 84.78
+      },
+      {
+        "question": "If P(A ∩ B) = 0.2 and P(B) = 0.5, what is P(A|B)?",
+        "options": [0.4, 0.5, 0.3, 0.2],
+        "correctAnswer": 0.4
+      },
+      {
+        "question": "What is the solution to |x - 3| > 5?",
+        "options": [
+          "x < -2 or x > 8",
+          "x > -2 or x < 8",
+          "x < 2 or x > 8",
+          "x < -2 or x > 8"
+        ],
+        "correctAnswer": "x < -2 or x > 8"
+      }
+    ]
+  },
+  {
+    "scene": "Sky Temple",
+    "questions": [
+      {
+        "question": "Solve for x: e^(2x) = 7.",
+        "options": ["ln(7)/2", "2ln(7)", "ln(7)/4", "2/ln(7)"],
+        "correctAnswer": "ln(7)/2"
+      },
+      {
+        "question": "Find the inverse of the function f(x) = 2x + 3.",
+        "options": ["(x - 3)/2", "(x + 3)/2", "2x - 3", "2/(x - 3)"],
+        "correctAnswer": "(x - 3)/2"
+      },
+      {
+        "question": "If A is a 3x3 matrix, det(2A) =?",
+        "options": ["8det(A)", "2det(A)", "4det(A)", "16det(A)"],
+        "correctAnswer": "8det(A)"
+      },
+      {
+        "question": "Evaluate the limit as x approaches 0: (sin(3x)/x).",
+        "options": [3, 1, 0, 2],
+        "correctAnswer": 3
+      },
+      {
+        "question": "A plane flies at a speed of 400 km/h against a wind of 40 km/h. What is the plane's effective speed?",
+        "options": [360, 380, 400, 420],
+        "correctAnswer": 360
+      },
+      {
+        "question": "Find the Maclaurin series expansion of e^x up to x^2.",
+        "options": ["1 + x + x^2/2", "1 + x", "1 + x^2", "x + x^2/2"],
+        "correctAnswer": "1 + x + x^2/2"
+      },
+      {
+        "question": "Compute the eigenvalues of the matrix [[2, 0], [0, 3]].",
+        "options": [2, 3, "2 and 3", "0"],
+        "correctAnswer": "2 and 3"
+      },
+      {
+        "question": "Solve the differential equation: dy/dx = 3y.",
+        "options": ["y = Ce^(3x)", "y = Ce^(x/3)", "y = Cx^3", "y = 3Ce^x"],
+        "correctAnswer": "y = Ce^(3x)"
+      },
+      {
+        "question": "What is the Fourier transform of δ(t)?",
+        "options": ["1", "0", "e^(jωt)", "jω"],
+        "correctAnswer": "1"
+      },
+      {
+        "question": "Evaluate the definite integral ∫(0 to π) of sin(x) dx.",
+        "options": [2, 1, 0, -2],
+        "correctAnswer": 2
+      },
+      {
+        "question": "Find the probability of drawing 2 aces consecutively from a standard deck of cards (without replacement).",
+        "options": ["1/221", "1/312", "1/153", "1/169"],
+        "correctAnswer": "1/221"
+      },
+      {
+        "question": "Find the divergence of the vector field F = 2xi + 3yj + 4zk.",
+        "options": ["9", "0", "4", "6"],
+        "correctAnswer": 9
+      },
+      {
+        "question": "Solve the inequality: |3x - 4| ≤ 5.",
+        "options": [
+          "-1/3 ≤ x ≤ 3",
+          "-1/3 ≤ x ≤ 3/2",
+          "-1 ≤ x ≤ 3",
+          "-1 ≤ x ≤ 3/2"
+        ],
+        "correctAnswer": "-1/3 ≤ x ≤ 3"
+      },
+      {
+        "question": "A curve is defined by parametric equations x = 3t, y = t^2. What is dy/dx at t = 2?",
+        "options": ["4/3", "2/3", "3/2", "3/4"],
+        "correctAnswer": "4/3"
+      },
+      {
+        "question": "If z = x + yi, what is the argument of z when x = 1 and y = √3?",
+        "options": ["π/3", "π/4", "π/6", "π"],
+        "correctAnswer": "π/3"
       }
     ]
   }
