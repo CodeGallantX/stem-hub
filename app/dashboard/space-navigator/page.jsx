@@ -2,6 +2,9 @@
 import Link from 'next/link';
 import { useState } from 'react'
 import { FaRocket, FaMapMarkerAlt, FaSatellite, FaStar } from 'react-icons/fa';
+import { MdDashboard } from 'react-icons/md';
+import { HiMenuAlt4 } from 'react-icons/hi';
+import { IoMdClose } from 'react-icons/io';
 
 export default function SpaceNavigator() {
   
@@ -14,11 +17,11 @@ export default function SpaceNavigator() {
   
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0b0033] via-[#1a004d] to-[#330066] text-white flex flex-col items-center">
-      <header className="z-20 fixed w-full flex justify-between items-center bg-gray-900 px-8 lg:px-14 py-4 shadow-lg">
-        <Link href="/dashboard/space-navigator" className="text-2xl md:text-3xl font-extrabold tracking-wider text-yellow-400">Space Navigator</Link>
+      <header className="z-20 fixed w-full flex justify-between items-center bg-purple-900 bg-opacity-20 backdrop-blur-md px-8 lg:px-14 xl:px-24 py-4 shadow-lg">
+        <Link href="/dashboard/space-navigator" className="text-2xl md:text-3xl font-bold tracking-wider text-gray-300">Space <span className="text-purple-400">Navigator</span></Link>
         <nav className="hidden lg:flex items-center space-x-6">
           <Link href="#adventure-map" className="hover:text-yellow-400 transition">
-            Adventure Map
+            Adventure
           </Link>
           <Link href="#leaderboard" className="hover:text-yellow-400 transition">
             Leaderboard
@@ -28,7 +31,7 @@ export default function SpaceNavigator() {
           </Link>
           <Link
             href="/dashboard"
-            className="bg-[#5200a3] hover:bg-[#6b00cc] px-4 py-2 rounded-full text-gray-800 flex items-center space-x-2 transition"
+            className="bg-[#5200a3] hover:bg-[#6b00cc] px-4 py-2 rounded-full text-white flex items-center space-x-2 transition"
           >
             <MdDashboard /> <span>Dashboard</span>
           </Link>
@@ -71,7 +74,7 @@ export default function SpaceNavigator() {
         </div>
       </header>
 
-      <section className="text-center mt-10">
+      <section className="text-center pt-40 py-20">
         <h2 className="text-3xl font-semibold mb-4">
           Discover the Universe Like Never Before
         </h2>
