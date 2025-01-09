@@ -75,18 +75,18 @@ export default function PeriodicityApp() {
 
   return (
     <div className="min-h-screen text-gray-900 bg-gradient-to-br from-green-100 via-pink-100 to-cyan-100 animate-gradient py-32">
-      <header className="z-20 fixed w-full top-0 flex justify-between items-center bg-transparent px-8 lg:px-20 py-4 border-b border-b-solid border-b-gray-500">
-        <Link href="/dashboard/mathquest" className="text-2xl md:text-3xl font-bold tracking-wider text-pink-600">
-          <span className="text-cyan-800">Periodic</span>Table
+      <header className="z-20 fixed w-full top-0 flex justify-between items-center bg-transparent backdrop-blur-md px-8 lg:px-20 py-4 border-b border-b-solid border-b-gray-500">
+        <Link href="/dashboard/mathquest" className="text-2xl md:text-3xl font-bold text-pink-600">
+          <span className="text-cyan-600">Periodic</span>Table
         </Link>
         <nav className="hidden lg:flex items-center space-x-6">
-          <Link href="#adventure-map" className="hover:text-yellow-400 transition">
+          <Link href="#adventure-map" className="hover:text-pink-400 transition">
             Adventure Map
           </Link>
-          <Link href="#leaderboard" className="hover:text-yellow-400 transition">
+          <Link href="#leaderboard" className="hover:text-pink-400 transition">
             Leaderboard
           </Link>
-          <Link href="#profile" className="hover:text-yellow-400 transition">
+          <Link href="#profile" className="hover:text-pink-400 transition">
             Profile
           </Link>
           <Link
@@ -114,19 +114,19 @@ export default function PeriodicityApp() {
             <IoMdClose />
           </button>
           <nav className="flex flex-col items-center space-y-8 text-lg">
-            <Link href="#adventure-map" onClick={toggleSidebar} className="hover:text-yellow-400 transition">
+            <Link href="#adventure-map" onClick={toggleSidebar} className="hover:text-pink-400 transition">
               Adventure Map
             </Link>
-            <Link href="#leaderboard" onClick={toggleSidebar} className="hover:text-yellow-400 transition">
+            <Link href="#leaderboard" onClick={toggleSidebar} className="hover:text-pink-400 transition">
               Leaderboard
             </Link>
-            <Link href="#profile" onClick={toggleSidebar} className="hover:text-yellow-400 transition">
+            <Link href="#profile" onClick={toggleSidebar} className="hover:text-pink-400 transition">
               Profile
             </Link>
             <Link
               href="/dashboard"
               onClick={toggleSidebar}
-              className="bg-yellow-400 px-4 py-2 rounded-full text-gray-800 flex items-center space-x-2 hover:bg-yellow-500 transition"
+              className="bg-pink-400 px-4 py-2 rounded-full text-gray-800 flex items-center space-x-2 hover:bg-pink-500 transition"
             >
               <MdDashboard /> <span>Dashboard</span>
             </Link>
@@ -198,19 +198,21 @@ export default function PeriodicityApp() {
             <p className="text-lg">
               What is the name of the element with symbol <strong>{currentQuestion?.symbol}</strong>?
             </p>
-            <input
-              type="text"
-              value={userAnswer}
-              onChange={(e) => setUserAnswer(e.target.value)}
-              placeholder="Enter your answer"
-              className="block w-1/2 mx-auto mt-4 p-2 border rounded"
-            />
-            <button
-              onClick={submitAnswer}
-              className="bg-blue-500 text-white mt-4 px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-400 transition"
-            >
-              Submit Answer
-            </button>
+            <fieldset className="flex flex-row items-center justify-center">
+              <input
+                type="text"
+                value={userAnswer}
+                onChange={(e) => setUserAnswer(e.target.value)}
+                placeholder="Enter your answer"
+                className="block max-w-lg mx-auto mt-4 px-4 py-3 outline-none border border-gray-300 focus:border-pink-500 rounded-full bg-pink-100 text-lg"
+              />
+              <button
+                onClick={submitAnswer}
+                className="bg-blue-500 text-white mt-4 px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-400 transition"
+              >
+                Submit Answer
+              </button>
+            </fieldset>
             <button
               onClick={quitQuiz}
               className="bg-red-500 text-white mt-4 px-6 py-3 rounded-full text-lg font-semibold hover:bg-red-400 transition ml-4"
@@ -239,15 +241,15 @@ export default function PeriodicityApp() {
             <div className="mt-6">
               <button
                 onClick={previousFlashcard}
-                className="bg-gradient-to-br from-pink-300 to-cyan-200 text-white px-4 py-3 rounded-full mr-4 hover:animate-gradient transition"
+                className="bg-gradient-to-br from-pink-500 to-cyan-400 text-white px-4 py-3 rounded-full mr-4 hover:animate-gradient transition"
               >
-                <FaArrowLeft className="inline-block mr-2"/> Previous
+                <FaArrowLeft className="inline-block mr-2" /> Previous
               </button>
               <button
                 onClick={nextFlashcard}
-                className="bg-gradient-to-br from-pink-300 to-cyan-200 text-white px-4 py-3 rounded-full hover:animate-gradient transition"
+                className="bg-gradient-to-br from-pink-500 to-cyan-400 text-white px-4 py-3 rounded-full hover:animate-gradient transition"
               >
-                <FaArrowRight className="inline-block mr-2"/>
+                <FaArrowRight className="inline-block mr-2" />
                 Next
               </button>
             </div>
