@@ -1,10 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { FaArrowRight, FaRedo, FaInfoCircle } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaRedo, FaInfoCircle } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
 import { HiMenuAlt4 } from "react-icons/hi";
-import { IoMdClose} from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
 
 export default function PeriodicityApp() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -24,7 +24,6 @@ export default function PeriodicityApp() {
 
   useEffect(() => {
     fetch("/elements.json")
-    
       .then((response) => response.json())
       .then((data) => setElements(data))
       .catch((error) => console.error("Error loading elements:", error));
@@ -70,10 +69,16 @@ export default function PeriodicityApp() {
     setFlashcardIndex((flashcardIndex + 1) % elements.length);
   };
 
+  const previousFlashcard = () => {
+    setFlashcardIndex((flashcardIndex - 1 + elements.length) % elements.length);
+  };
+
   return (
-    <div className="min-h-screen p-6 text-gray-900 bg-gradient-to-br from-emerald-100 to-amber-100 animate-gradient">
-      <header className="z-20 fixed w-full flex justify-between items-center bg-transparent px-8 lg:px-14 py-4 shadow-lg">
-        <Link href="/dashboard/mathquest" className="text-2xl md:text-3xl font-bold tracking-wider text-yellow-400"><span className="text-white">Math</span>Quest</Link>
+    <div className="min-h-screen text-gray-900 bg-gradient-to-br from-green-100 via-pink-100 to-cyan-100 animate-gradient py-32">
+      <header className="z-20 fixed w-full top-0 flex justify-between items-center bg-transparent px-8 lg:px-20 py-4 border-b border-b-solid border-b-gray-500">
+        <Link href="/dashboard/mathquest" className="text-2xl md:text-3xl font-bold tracking-wider text-pink-600">
+          <span className="text-cyan-800">Periodic</span>Table
+        </Link>
         <nav className="hidden lg:flex items-center space-x-6">
           <Link href="#adventure-map" className="hover:text-yellow-400 transition">
             Adventure Map
@@ -86,7 +91,7 @@ export default function PeriodicityApp() {
           </Link>
           <Link
             href="/dashboard"
-            className="bg-yellow-400 px-4 py-2 rounded-full text-gray-800 flex items-center space-x-2 hover:bg-yellow-500 transition"
+            className="bg-pink-400 px-4 py-2 rounded-full text-gray-800 flex items-center space-x-2 hover:bg-pink-500 transition"
           >
             <MdDashboard /> <span>Dashboard</span>
           </Link>
@@ -147,13 +152,12 @@ export default function PeriodicityApp() {
                       onMouseEnter={() => setHoveredElement(element)}
                       onMouseLeave={() => setHoveredElement(null)}
                       className={`w-12 h-12 flex flex-col justify-center items-center border border-gray-300 rounded 
-                      transition-transform hover:scale-110 ${
-                        element.block === "s"
+                      transition-transform hover:scale-110 ${element.block === "s"
                           ? "bg-blue-100"
                           : element.block === "p"
-                          ? "bg-green-100"
-                          : "bg-yellow-100"
-                      }`}
+                            ? "bg-green-100"
+                            : "bg-yellow-100"
+                        }`}
                     >
                       <strong>{element.symbol}</strong>
                       <span className="text-xs">{element.atomicNumber}</span>
@@ -220,21 +224,44 @@ export default function PeriodicityApp() {
           </div>
         </section>
       ) : flashcardMode ? (
-        <section>
+        <section className="">
           <h2 className="text-3xl font-semibold text-center mt-8">Flashcards</h2>
           <div className="text-center mt-6">
-            <div className="border p-4 rounded shadow-lg bg-blue-50">
-              <h3 className="text-2xl font-bold">{elements[flashcardIndex].symbol}</h3>
-              <p className="text-sm mt-2">{elements[flashcardIndex].info}</p>
+            <div className="border mx-auto max-w-md p-6 rounded-2xl shadow-lg bg-gradient-to-br from-pink-300 to-cyan-200">
+              <h3 className="text-3xl font-bold text-gray-800">{elements[flashcardIndex].name}</h3>
+              <p className="text-xl text-gray-600">{elements[flashcardIndex].symbol} ({elements[flashcardIndex].atomicNumber})</p>
+              <p className="text-lg text-gray-500 mt-4">Group: {elements[flashcardIndex].group}, Period: {elements[flashcardIndex].period}</p>
+              <p className="text-sm text-gray-400">Block: {elements[flashcardIndex].block}</p>
+              <p className="text-lg font-semibold text-gray-800 mt-4">Atomic Mass: {elements[flashcardIndex].atomicMass}</p>
+              <p className="text-sm text-gray-500 mt-4">{elements[flashcardIndex].info}</p>
+              <p className="text-sm text-gray-500 mt-4">State of Matter: {elements[flashcardIndex].stateOfMatter}</p>
             </div>
-            <button
-              onClick={nextFlashcard}
-              className="mt-4 bg-green-500 text-white px-4 py-2 rounded"
-            >
-              Next
-            </button>
+            <div className="mt-6">
+              <button
+                onClick={previousFlashcard}
+                className="bg-gradient-to-br from-pink-300 to-cyan-200 text-white px-4 py-3 rounded-full mr-4 hover:animate-gradient transition"
+              >
+                <FaArrowLeft className="inline-block mr-2"/> Previous
+              </button>
+              <button
+                onClick={nextFlashcard}
+                className="bg-gradient-to-br from-pink-300 to-cyan-200 text-white px-4 py-3 rounded-full hover:animate-gradient transition"
+              >
+                <FaArrowRight className="inline-block mr-2"/>
+                Next
+              </button>
+            </div>
+            <div className="mt-6">
+              <button
+                onClick={() => setFlashcardMode(false)}
+                className="bg-red-500 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-red-400 transition mt-4"
+              >
+                Quit
+              </button>
+            </div>
           </div>
         </section>
+
       ) : null}
 
       <footer className="text-center mt-10 text-gray-500 text-sm">
