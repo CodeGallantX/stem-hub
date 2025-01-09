@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaArrowLeft, FaArrowRight, FaRedo, FaInfoCircle } from "react-icons/fa";
+import { FaPlay } from "react-icons/fa6";
 import { MdDashboard } from "react-icons/md";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
@@ -74,11 +75,10 @@ export default function PeriodicityApp() {
   };
 
   return (
-    <div className="min-h-screen text-gray-900 bg-gradient-to-br from-green-100 via-pink-100 to-cyan-100 animate-gradient py-32">
-      <header className="z-20 fixed w-full top-0 flex justify-between items-center bg-transparent backdrop-blur-md px-8 lg:px-20 py-4 border-b border-b-solid border-b-gray-500">
-        <Link href="/dashboard/mathquest" className="text-2xl md:text-3xl font-bold text-pink-600">
-          <span className="text-cyan-600">Periodic</span>Table
-        </Link>
+    <div className="min-h-screen h-full min-w-screen text-gray-900 bg-gradient-to-br from-green-100 via-pink-100 to-cyan-100 animate-gradient">
+      <header className="z-20 fixed w-full flex justify-between items-center bg-transparent backdrop-blur-md border-b border-b-solid border-b-gray-300 px-8 lg:px-14 py-4">
+        <Link href="/dashboard/periodicity" className="text-2xl md:text-3xl font-bold text-pink-400">
+        <span className="text-cyan-600">Periodic </span>Table</Link>
         <nav className="hidden lg:flex items-center space-x-6">
           <Link href="#adventure-map" className="hover:text-pink-400 transition">
             Adventure Map
@@ -96,7 +96,7 @@ export default function PeriodicityApp() {
             <MdDashboard /> <span>Dashboard</span>
           </Link>
         </nav>
-        <button onClick={toggleSidebar} className="lg:hidden text-3xl text-white">
+        <button onClick={toggleSidebar} className="lg:hidden text-3xl text-pink-500">
           <HiMenuAlt4 />
         </button>
         {isSidebarOpen && (
@@ -133,6 +133,8 @@ export default function PeriodicityApp() {
           </nav>
         </div>
       </header>
+      
+      <div>
 
       {elements.length === 0 ? (
         <div className="text-center mt-8">Loading data...</div>
@@ -151,7 +153,7 @@ export default function PeriodicityApp() {
                       key={element.atomicNumber}
                       onMouseEnter={() => setHoveredElement(element)}
                       onMouseLeave={() => setHoveredElement(null)}
-                      className={`w-12 h-12 flex flex-col justify-center items-center border border-gray-300 rounded 
+                      className={`w-12 h-12 flex flex-col justify-center items-center border border-gray-300 rounded cursor-pointer
                       transition-transform hover:scale-110 ${element.block === "s"
                           ? "bg-blue-100"
                           : element.block === "p"
@@ -179,7 +181,7 @@ export default function PeriodicityApp() {
               onClick={startQuiz}
               className="bg-green-500 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-green-400 transition"
             >
-              <FaArrowRight className="inline mr-2" />
+              <FaPlay className="inline mr-2" />
               Start Quiz
             </button>
             <button
@@ -257,7 +259,7 @@ export default function PeriodicityApp() {
               <button
                 onClick={() => setFlashcardMode(false)}
                 className="bg-red-500 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-red-400 transition mt-4"
-              >
+                >
                 Quit
               </button>
             </div>
@@ -265,6 +267,7 @@ export default function PeriodicityApp() {
         </section>
 
       ) : null}
+</div>
 
       <footer className="text-center mt-10 text-gray-500 text-sm">
         <p>© {new Date().getFullYear()} Periodicity Explorer. All Rights Reserved.</p>
