@@ -25,7 +25,6 @@ export default function ChemLab() {
           properties, and more with our interactive lab.
         </p>
 
-        {/* Experiment Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {experiments.map((experiment) => (
             <div
