@@ -26,7 +26,7 @@ export default function Dashboard() {
       </div>
 
       <button
-        className={`text-2xl absolute top-5 p-1 bg-[#e76f51] rounded-full text-gray-100 font-bold cursor-pointer z-30 
+        className={`text-2xl fixed top-5 p-1 bg-[#e76f51] rounded-full text-gray-100 font-bold cursor-pointer z-30 
           transition-transform duration-300 ${
             sidebarOpen ? "left-[16rem]" : "left-16"
           }`}

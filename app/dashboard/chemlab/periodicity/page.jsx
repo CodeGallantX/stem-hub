@@ -80,13 +80,10 @@ export default function PeriodicityApp() {
         <Link href="/dashboard/periodicity" className="text-2xl md:text-3xl font-bold text-pink-400">
         <span className="text-cyan-600">Periodic </span>Table</Link>
         <nav className="hidden lg:flex items-center space-x-6">
-          <Link href="#adventure-map" className="hover:text-pink-400 transition">
-            Adventure Map
-          </Link>
-          <Link href="#leaderboard" className="hover:text-pink-400 transition">
+          <Link href="/dashboard/leaderboard" className="hover:text-pink-400 transition">
             Leaderboard
           </Link>
-          <Link href="#profile" className="hover:text-pink-400 transition">
+          <Link href="/dashboard/profile" className="hover:text-pink-400 transition">
             Profile
           </Link>
           <Link
@@ -114,13 +111,10 @@ export default function PeriodicityApp() {
             <IoMdClose />
           </button>
           <nav className="flex flex-col items-center space-y-8 text-lg">
-            <Link href="#adventure-map" onClick={toggleSidebar} className="hover:text-pink-400 transition">
-              Adventure Map
-            </Link>
-            <Link href="#leaderboard" onClick={toggleSidebar} className="hover:text-pink-400 transition">
+            <Link href="/dashboard/leaderboard" onClick={toggleSidebar} className="hover:text-pink-400 transition">
               Leaderboard
             </Link>
-            <Link href="#profile" onClick={toggleSidebar} className="hover:text-pink-400 transition">
+            <Link href="/dashboard/profile" onClick={toggleSidebar} className="hover:text-pink-400 transition">
               Profile
             </Link>
             <Link
@@ -134,7 +128,7 @@ export default function PeriodicityApp() {
         </div>
       </header>
       
-      <div>
+      <div className="py-40">
 
       {elements.length === 0 ? (
         <div className="text-center mt-8">Loading data...</div>
@@ -171,8 +165,9 @@ export default function PeriodicityApp() {
               </div>
             ))}
             {hoveredElement && (
-              <div className="absolute bg-white shadow-lg p-2 text-sm rounded z-10">
-                <strong>{hoveredElement.name}</strong>: {hoveredElement.info}
+              <div className="absolute flex flex-col items-start justify-center -translate-x-20 bg-white shadow-lg p-2 text-sm rounded z-10">
+                <strong>{hoveredElement.name}</strong>: {hoveredElement.stateOfMatter}
+                <p>{hoveredElement.info}</p> 
               </div>
             )}
           </div>
@@ -200,30 +195,31 @@ export default function PeriodicityApp() {
             <p className="text-lg">
               What is the name of the element with symbol <strong>{currentQuestion?.symbol}</strong>?
             </p>
-            <fieldset className="flex flex-row items-center justify-center">
+            <form className="relative mx-auto flex flex-row items-center justify-center">
               <input
                 type="text"
                 value={userAnswer}
                 onChange={(e) => setUserAnswer(e.target.value)}
                 placeholder="Enter your answer"
-                className="block max-w-lg mx-auto mt-4 px-4 py-3 outline-none border border-gray-300 focus:border-pink-500 rounded-full bg-pink-100 text-lg"
+                className="block max-w-lg w-full mt-4 px-5 py-3 outline-none border border-gray-400 focus:border-pink-500 rounded-full bg-pink-50 text-lg"
               />
               <button
                 onClick={submitAnswer}
-                className="bg-blue-500 text-white mt-4 px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-400 transition"
+                type="submit"
+                className="-translate-x-1/2 bg-pink-500 text-white mt-4 px-6 py-3 rounded-full text-lg font-semibold hover:bg-pink-400 transition"
               >
-                Submit Answer
+                Submit
               </button>
-            </fieldset>
+            </form>
             <button
               onClick={quitQuiz}
               className="bg-red-500 text-white mt-4 px-6 py-3 rounded-full text-lg font-semibold hover:bg-red-400 transition ml-4"
             >
-              Quit Quiz
+              Quit
             </button>
-            <div className="mt-6">
-              <p className="text-lg">Score: {score}</p>
-              <p className="text-lg">Attempts: {attempts}</p>
+            <div className="mt-6 flex flex-row items-center justify-center text-white text-left space-x-6">
+              <p className="text-lg bg-gray-800 px-4 py-3 rounded-xl">Score: {score}</p>
+              <p className="text-lg bg-gray-800 px-4 py-3 rounded-xl">Attempts: {attempts}</p>
             </div>
           </div>
         </section>

@@ -12,21 +12,9 @@
         "image": "/wallpaper.png"
     },
     {
-        "title": "CodeLab",
-        "tagline": "Interactive coding tutorials and challenges for STEM students.",
-        "url": "/dashboard/codelab",
-        "image": "/wallpaper.png"
-    },
-    {
         "title": "EcoSimulator",
         "tagline": "Learn environmental science through virtual ecosystems and simulations.",
         "url": "/dashboard/ecosimulator",
-        "image": "/wallpaper.png"
-    },
-    {
-        "title": "RoboCoder",
-        "tagline": "Program virtual robots to complete challenges and learn coding logic.",
-        "url": "/dashboard/robocoder",
         "image": "/wallpaper.png"
     },
     {
